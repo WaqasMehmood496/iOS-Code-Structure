@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+        <array key="NunitoSans-Regular.ttf">
+            <string>NunitoSans-Regular</string>
+        </array>
+        <array key="NunitoSans-SemiBold.ttf">
+            <string>NunitoSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="243" id="KGk-i7-Jjw" customClass="SurveyCell" customModule="Evexia_Production" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="366" height="243"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="366" height="243"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lqx-YV-jUv">
+                        <rect key="frame" x="0.0" y="42" width="366" height="201"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2s3-EX-A84">
+                                <rect key="frame" x="0.0" y="0.0" width="366" height="201"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="DJN-tQ-F9M">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="32"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99x-ED-Qu6">
+                                                <rect key="frame" x="334" y="8" width="24" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="24" id="3fD-D2-Xla"/>
+                                                    <constraint firstAttribute="height" constant="24" id="QJw-Be-O7n"/>
+                                                </constraints>
+                                                <color key="tintColor" name="gray400"/>
+                                                <state key="normal" image="close"/>
+                                                <connections>
+                                                    <action selector="closeButtonDidTap:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="hdS-hQ-14k"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="0.0" right="8"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zeB-C5-q5M">
+                                        <rect key="frame" x="0.0" y="32" width="366" height="169"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="jSY-9L-Kwu">
+                                                <rect key="frame" x="16" y="0.0" width="334" height="145"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="QbQ-SV-NFf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="334" height="74"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="749" text="Evexia Pulse Survey" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xdt-Xb-PxI">
+                                                                <rect key="frame" x="0.0" y="0.0" width="334" height="22"/>
+                                                                <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="16"/>
+                                                                <color key="textColor" name="gray100"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is working from home affecting your health?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9Q-gh-s8Y">
+                                                                <rect key="frame" x="0.0" y="31" width="334" height="43"/>
+                                                                <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="14"/>
+                                                                <color key="textColor" name="gray400"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9ek-fb-P8Y">
+                                                        <rect key="frame" x="0.0" y="93" width="334" height="52"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HEc-nh-Dbg">
+                                                                <rect key="frame" x="50" y="0.0" width="234" height="52"/>
+                                                                <color key="backgroundColor" name="blueSurvey"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="52" id="Orw-zg-Jfc"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="NunitoSans-SemiBold" family="Nunito Sans" pointSize="20"/>
+                                                                <state key="normal" title="Start survey">
+                                                                    <color key="titleColor" name="eatNew"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="startSurveyButtonDidTap:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="S6m-gc-Ipp"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <edgeInsets key="layoutMargins" top="0.0" left="50" bottom="0.0" right="50"/>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <edgeInsets key="layoutMargins" top="0.0" left="16" bottom="24" right="16"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.11764705882352941" green="0.32156862745098036" blue="0.52549019607843139" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2s3-EX-A84" firstAttribute="leading" secondItem="lqx-YV-jUv" secondAttribute="leading" id="9rw-E7-7HV"/>
+                            <constraint firstAttribute="bottom" secondItem="2s3-EX-A84" secondAttribute="bottom" id="ubN-zq-bt0"/>
+                            <constraint firstItem="2s3-EX-A84" firstAttribute="top" secondItem="lqx-YV-jUv" secondAttribute="top" id="x7t-8F-4rV"/>
+                            <constraint firstAttribute="trailing" secondItem="2s3-EX-A84" secondAttribute="trailing" id="zgs-y1-ArW"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gyj-7W-p41">
+                        <rect key="frame" x="157" y="16" width="52" height="52"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencil" translatesAutoresizingMaskIntoConstraints="NO" id="QVN-uu-wAz">
+                                <rect key="frame" x="11" y="11" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1S4-zy-fpB"/>
+                                    <constraint firstAttribute="width" constant="30" id="OKD-yF-UHr"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="blueSurvey"/>
+                        <constraints>
+                            <constraint firstItem="QVN-uu-wAz" firstAttribute="centerY" secondItem="gyj-7W-p41" secondAttribute="centerY" id="4IR-zj-8GX"/>
+                            <constraint firstAttribute="width" constant="52" id="EUv-kF-GeA"/>
+                            <constraint firstAttribute="height" constant="52" id="N5v-GN-iG1"/>
+                            <constraint firstItem="QVN-uu-wAz" firstAttribute="centerX" secondItem="gyj-7W-p41" secondAttribute="centerX" id="yzP-4U-htg"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="lqx-YV-jUv" firstAttribute="top" secondItem="gyj-7W-p41" secondAttribute="centerY" id="8Ib-uI-7Re"/>
+                    <constraint firstItem="lqx-YV-jUv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="BNP-Mu-vl8"/>
+                    <constraint firstItem="gyj-7W-p41" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="ECB-g8-Vz5"/>
+                    <constraint firstAttribute="bottom" secondItem="lqx-YV-jUv" secondAttribute="bottom" id="Ed5-PA-4sm"/>
+                    <constraint firstItem="gyj-7W-p41" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="XvQ-oI-lcW"/>
+                    <constraint firstAttribute="trailing" secondItem="lqx-YV-jUv" secondAttribute="trailing" id="oh0-hW-FQL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="backView" destination="lqx-YV-jUv" id="T2G-Ka-VMB"/>
+                <outlet property="closeButton" destination="99x-ED-Qu6" id="L5P-GB-kTD"/>
+                <outlet property="descriptionLabel" destination="R9Q-gh-s8Y" id="MmI-0B-xsA"/>
+                <outlet property="imageGradientView" destination="gyj-7W-p41" id="WV1-2g-r1M"/>
+                <outlet property="startSurveyButton" destination="HEc-nh-Dbg" id="QyW-Jf-7os"/>
+                <outlet property="surveyImageView" destination="QVN-uu-wAz" id="djL-WQ-MBp"/>
+                <outlet property="titleLabel" destination="Xdt-Xb-PxI" id="XnG-jH-YvZ"/>
+            </connections>
+            <point key="canvasLocation" x="155.07246376811597" y="144.30803571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="close" width="24" height="24"/>
+        <image name="pencil" width="30" height="30"/>
+        <namedColor name="blueSurvey">
+            <color red="0.92549019607843142" green="0.95294117647058818" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="eatNew">
+            <color red="0.11764705882352941" green="0.32156862745098042" blue="0.52549019607843139" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray100">
+            <color red="0.96899998188018799" green="0.98000001907348633" blue="0.98799997568130493" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray400">
+            <color red="0.79607843137254897" green="0.83529411764705885" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

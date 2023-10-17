@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-SemiBold.ttf">
+            <string>NunitoSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="69" id="KGk-i7-Jjw" customClass="ProfileSettingCell" customModule="Evexia_Production" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZZQ-TR-W3k">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Benefits" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4U-gl-KmY">
+                                <rect key="frame" x="16" y="25" width="256" height="19"/>
+                                <fontDescription key="fontDescription" name="NunitoSans-SemiBold" family="Nunito Sans" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron_right" translatesAutoresizingMaskIntoConstraints="NO" id="16y-y6-8DU">
+                                <rect key="frame" x="280" y="22.5" width="24" height="24"/>
+                                <color key="tintColor" name="gray900"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="J6g-iQ-HN1"/>
+                                    <constraint firstAttribute="height" constant="24" id="Lrh-Ya-Xst"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <edgeInsets key="layoutMargins" top="0.0" left="16" bottom="0.0" right="16"/>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ZZQ-TR-W3k" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="VaH-BF-ydN"/>
+                    <constraint firstAttribute="trailing" secondItem="ZZQ-TR-W3k" secondAttribute="trailing" id="dIR-0E-nBY"/>
+                    <constraint firstAttribute="bottom" secondItem="ZZQ-TR-W3k" secondAttribute="bottom" id="hmp-4W-aOe"/>
+                    <constraint firstItem="ZZQ-TR-W3k" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="x1M-Sh-3tf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="settingLabel" destination="u4U-gl-KmY" id="9Aj-na-c7Q"/>
+            </connections>
+            <point key="canvasLocation" x="-36.231884057971016" y="100.78125"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chevron_right" width="24" height="24"/>
+        <namedColor name="gray900">
+            <color red="0.10199999809265137" green="0.125" blue="0.17299999296665192" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

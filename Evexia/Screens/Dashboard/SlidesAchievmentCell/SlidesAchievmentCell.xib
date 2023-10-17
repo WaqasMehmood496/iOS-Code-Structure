@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+        <array key="NunitoSans-Regular.ttf">
+            <string>NunitoSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SlidesAchievmentCell" customModule="Evexia_Production" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="282" height="168"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="282" height="168"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JPd-3l-GX3">
+                        <rect key="frame" x="5" y="5" width="272" height="158"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="New badge" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g16-bL-3Ni">
+                                <rect key="frame" x="159.5" y="123" width="63.5" height="16.5"/>
+                                <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="12"/>
+                                <color key="textColor" name="gray600"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="activeStepAchieve" translatesAutoresizingMaskIntoConstraints="NO" id="KX5-UH-TnP">
+                                <rect key="frame" x="20" y="20" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="1Dt-sF-2HK"/>
+                                    <constraint firstAttribute="height" constant="70" id="7CD-lI-jpB"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This week my average" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOX-Z4-Nzm">
+                                <rect key="frame" x="105" y="20" width="147" height="44"/>
+                                <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="16"/>
+                                <color key="textColor" name="gray800"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1zs-Yl-dQG">
+                                <rect key="frame" x="20" y="105" width="232" height="4"/>
+                                <color key="tintColor" name="connectNew"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRL-2j-vCR">
+                                <rect key="frame" x="51" y="60.5" width="8" height="19.5"/>
+                                <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🎁" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pna-gC-obv">
+                                <rect key="frame" x="233" y="119" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="Ei5-LZ-8Wx"/>
+                                    <constraint firstAttribute="width" constant="24" id="Znz-Yf-bBc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="0/25" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzg-Ru-gVM">
+                                <rect key="frame" x="20" y="123" width="25.5" height="16.5"/>
+                                <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="12"/>
+                                <color key="textColor" name="gray600"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zzg-Ru-gVM" firstAttribute="centerY" secondItem="Pna-gC-obv" secondAttribute="centerY" id="3ab-JN-Lyd"/>
+                            <constraint firstItem="YOX-Z4-Nzm" firstAttribute="top" secondItem="KX5-UH-TnP" secondAttribute="top" id="46I-SC-ads"/>
+                            <constraint firstAttribute="trailing" secondItem="YOX-Z4-Nzm" secondAttribute="trailing" constant="20" id="5Kl-j7-ysw"/>
+                            <constraint firstAttribute="trailing" secondItem="Pna-gC-obv" secondAttribute="trailing" constant="15" id="COC-W1-Dde"/>
+                            <constraint firstItem="KX5-UH-TnP" firstAttribute="top" secondItem="JPd-3l-GX3" secondAttribute="top" constant="20" id="EH5-3W-KRV"/>
+                            <constraint firstItem="XRL-2j-vCR" firstAttribute="bottom" secondItem="KX5-UH-TnP" secondAttribute="bottom" constant="-10" id="OvA-KA-VVI"/>
+                            <constraint firstAttribute="bottom" secondItem="Pna-gC-obv" secondAttribute="bottom" constant="15" id="S4d-wV-Qmk"/>
+                            <constraint firstAttribute="trailing" secondItem="1zs-Yl-dQG" secondAttribute="trailing" constant="20" id="WsF-VY-Ts3"/>
+                            <constraint firstItem="g16-bL-3Ni" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zzg-Ru-gVM" secondAttribute="trailing" constant="25" id="aB0-0D-csY"/>
+                            <constraint firstItem="zzg-Ru-gVM" firstAttribute="leading" secondItem="JPd-3l-GX3" secondAttribute="leading" constant="20" id="cNW-5d-jz4"/>
+                            <constraint firstItem="YOX-Z4-Nzm" firstAttribute="leading" secondItem="KX5-UH-TnP" secondAttribute="trailing" constant="15" id="cNc-ro-kf4"/>
+                            <constraint firstItem="Pna-gC-obv" firstAttribute="top" secondItem="1zs-Yl-dQG" secondAttribute="bottom" constant="10" id="d2T-Sb-Ijk"/>
+                            <constraint firstItem="KX5-UH-TnP" firstAttribute="leading" secondItem="JPd-3l-GX3" secondAttribute="leading" constant="20" id="dNZ-hN-tbx"/>
+                            <constraint firstItem="1zs-Yl-dQG" firstAttribute="top" relation="greaterThanOrEqual" secondItem="KX5-UH-TnP" secondAttribute="bottom" constant="15" id="eQZ-4h-ddi"/>
+                            <constraint firstItem="Pna-gC-obv" firstAttribute="leading" secondItem="g16-bL-3Ni" secondAttribute="trailing" constant="10" id="oaf-HD-WB1"/>
+                            <constraint firstItem="1zs-Yl-dQG" firstAttribute="top" relation="greaterThanOrEqual" secondItem="YOX-Z4-Nzm" secondAttribute="bottom" constant="15" id="omd-HT-J7f"/>
+                            <constraint firstItem="g16-bL-3Ni" firstAttribute="centerY" secondItem="Pna-gC-obv" secondAttribute="centerY" id="thS-yq-XLl"/>
+                            <constraint firstItem="1zs-Yl-dQG" firstAttribute="leading" secondItem="JPd-3l-GX3" secondAttribute="leading" constant="20" id="ufd-xJ-0sC"/>
+                            <constraint firstItem="XRL-2j-vCR" firstAttribute="centerX" secondItem="KX5-UH-TnP" secondAttribute="centerX" id="ydZ-OM-PmR"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="JPd-3l-GX3" secondAttribute="bottom" constant="5" id="FAl-Rz-x6C"/>
+                <constraint firstAttribute="trailing" secondItem="JPd-3l-GX3" secondAttribute="trailing" constant="5" id="FaR-KO-gjc"/>
+                <constraint firstItem="JPd-3l-GX3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="W36-G8-bF1"/>
+                <constraint firstItem="JPd-3l-GX3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="xA1-jK-hwh"/>
+            </constraints>
+            <size key="customSize" width="282" height="168"/>
+            <connections>
+                <outlet property="achievDescriptionLabel" destination="YOX-Z4-Nzm" id="Fu4-1V-1Ws"/>
+                <outlet property="achievIcon" destination="KX5-UH-TnP" id="pSD-gG-mYw"/>
+                <outlet property="achievProgressView" destination="1zs-Yl-dQG" id="r7U-AJ-VVX"/>
+                <outlet property="currentProgressLabel" destination="zzg-Ru-gVM" id="ZA1-pr-Cy6"/>
+                <outlet property="mainView" destination="JPd-3l-GX3" id="diT-Gd-eUP"/>
+                <outlet property="stepsCountLabel" destination="XRL-2j-vCR" id="fYJ-HA-Rym"/>
+            </connections>
+            <point key="canvasLocation" x="305.79710144927537" y="125.89285714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="activeStepAchieve" width="86" height="86"/>
+        <namedColor name="connectNew">
+            <color red="0.23137254901960785" green="0.52549019607843139" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray600">
+            <color red="0.44299998879432678" green="0.50199997425079346" blue="0.58799999952316284" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray800">
+            <color red="0.17599999904632568" green="0.21600000560283661" blue="0.28200000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

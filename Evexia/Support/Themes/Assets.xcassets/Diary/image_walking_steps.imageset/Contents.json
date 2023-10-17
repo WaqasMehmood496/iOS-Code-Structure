@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "images_walking_steps.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

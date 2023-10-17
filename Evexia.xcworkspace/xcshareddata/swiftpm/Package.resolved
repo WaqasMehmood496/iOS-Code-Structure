@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "rook-ios-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/RookeriesDevelopment/rook-ios-sdk",
+      "state" : {
+        "revision" : "a2cacef50771be1c152b15110d4cd7558e1b12df",
+        "version" : "1.0.4"
+      }
+    }
+  ],
+  "version" : 2
+}

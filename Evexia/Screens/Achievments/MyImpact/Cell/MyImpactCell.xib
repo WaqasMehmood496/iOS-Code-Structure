@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MyImpactCell" customModule="Evexia_Production" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="164"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="164"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eSI-0t-J3b" userLabel="ShadowView">
+                        <rect key="frame" x="0.0" y="8" width="343" height="148"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eTj-in-mBv" userLabel="CornerView">
+                                <rect key="frame" x="0.0" y="0.0" width="343" height="148"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_myEffort_impact" translatesAutoresizingMaskIntoConstraints="NO" id="Ezu-Fj-0o2">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="148"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-8" translatesAutoresizingMaskIntoConstraints="NO" id="u2w-p7-58G">
+                                        <rect key="frame" x="140" y="16" width="127.5" height="88.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My effort reduced" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmZ-cI-YIm">
+                                                <rect key="frame" x="0.0" y="0.0" width="127.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="14"/>
+                                                <color key="textColor" name="darkBlueNew"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="10.25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHk-0S-g5q">
+                                                <rect key="frame" x="0.0" y="11.5" width="127.5" height="65.5"/>
+                                                <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="48"/>
+                                                <color key="textColor" name="darkBlueNew"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CO2 emission" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s4y-8q-9vG">
+                                                <rect key="frame" x="0.0" y="69" width="127.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="14"/>
+                                                <color key="textColor" name="darkBlueNew"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Ezu-Fj-0o2" firstAttribute="top" secondItem="eTj-in-mBv" secondAttribute="top" id="2jC-AZ-oef"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ezu-Fj-0o2" secondAttribute="trailing" id="Tso-61-bju"/>
+                                    <constraint firstItem="Ezu-Fj-0o2" firstAttribute="leading" secondItem="eTj-in-mBv" secondAttribute="leading" id="UTb-cC-1IT"/>
+                                    <constraint firstItem="u2w-p7-58G" firstAttribute="top" secondItem="eTj-in-mBv" secondAttribute="top" constant="16" id="WK4-HY-USo"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ezu-Fj-0o2" secondAttribute="bottom" id="oGl-er-GvW"/>
+                                    <constraint firstItem="u2w-p7-58G" firstAttribute="leading" secondItem="eTj-in-mBv" secondAttribute="leading" multiplier="343:164" constant="140" id="zYL-IY-CIo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eTj-in-mBv" firstAttribute="leading" secondItem="eSI-0t-J3b" secondAttribute="leading" id="7md-c4-qej"/>
+                            <constraint firstAttribute="bottom" secondItem="eTj-in-mBv" secondAttribute="bottom" id="CY8-uQ-Gmr"/>
+                            <constraint firstAttribute="trailing" secondItem="eTj-in-mBv" secondAttribute="trailing" id="tzv-Ea-3PU"/>
+                            <constraint firstItem="eTj-in-mBv" firstAttribute="top" secondItem="eSI-0t-J3b" secondAttribute="top" id="yfW-09-7Ex"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="eSI-0t-J3b" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="PCU-zR-ChS"/>
+                    <constraint firstAttribute="bottom" secondItem="eSI-0t-J3b" secondAttribute="bottom" constant="8" id="UTt-3e-tJT"/>
+                    <constraint firstItem="eSI-0t-J3b" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="eSF-Jj-wWS"/>
+                    <constraint firstAttribute="trailing" secondItem="eSI-0t-J3b" secondAttribute="trailing" id="zk9-NM-CT2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="backgroundImageView" destination="Ezu-Fj-0o2" id="HHB-Q7-lra"/>
+                <outlet property="carboneValueLabel" destination="aHk-0S-g5q" id="owh-ZD-Z6v"/>
+                <outlet property="cornerView" destination="eTj-in-mBv" id="8Lj-42-4c2"/>
+                <outlet property="shadowView" destination="eSI-0t-J3b" id="wM0-Y4-SD6"/>
+                <outlet property="subTitleLabel" destination="s4y-8q-9vG" id="WUm-o9-A7R"/>
+                <outlet property="titleLabel" destination="nmZ-cI-YIm" id="rB0-4r-fZ9"/>
+            </connections>
+            <point key="canvasLocation" x="138.40579710144928" y="99.776785714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="image_myEffort_impact" width="343" height="132"/>
+        <namedColor name="darkBlueNew">
+            <color red="0.070588235294117646" green="0.19215686274509805" blue="0.32156862745098042" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

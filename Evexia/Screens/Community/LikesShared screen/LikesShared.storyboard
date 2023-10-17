@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Likes SharedVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="LikesSharedVC" id="Y6W-OH-hqX" customClass="LikesSharedVC" customModule="Evexia_Production" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5TK-jz-G5o">
+                                <rect key="frame" x="6" y="52" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Yi8-NT-uLL"/>
+                                    <constraint firstAttribute="width" constant="44" id="cqK-HW-bNe"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" image="ico_community_close"/>
+                                <connections>
+                                    <action selector="closeVC:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="htH-Tc-2bN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yj2-jv-WiC">
+                                <rect key="frame" x="207" y="60" width="0.0" height="28"/>
+                                <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yXo-Qi-gJP">
+                                <rect key="frame" x="0.0" y="104" width="414" height="1"/>
+                                <color key="backgroundColor" name="gray300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Xdh-17-g2O"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="k0h-Ix-4Zh">
+                                <rect key="frame" x="0.0" y="105" width="414" height="757"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5TK-jz-G5o" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="6" id="4LK-1a-NYF"/>
+                            <constraint firstItem="yj2-jv-WiC" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="8nh-0e-8JW"/>
+                            <constraint firstItem="yXo-Qi-gJP" firstAttribute="top" secondItem="yj2-jv-WiC" secondAttribute="bottom" constant="16" id="Jdp-dL-DGX"/>
+                            <constraint firstItem="5TK-jz-G5o" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="8" id="QDz-QN-zVG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="k0h-Ix-4Zh" secondAttribute="trailing" id="Uel-x4-xUb"/>
+                            <constraint firstItem="yXo-Qi-gJP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="bbQ-18-Psa"/>
+                            <constraint firstItem="yj2-jv-WiC" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="16" id="fVS-L8-ead"/>
+                            <constraint firstItem="5TK-jz-G5o" firstAttribute="centerY" secondItem="yj2-jv-WiC" secondAttribute="centerY" id="gHS-aI-PYT"/>
+                            <constraint firstItem="k0h-Ix-4Zh" firstAttribute="top" secondItem="yXo-Qi-gJP" secondAttribute="bottom" id="lBM-5V-rDb"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="k0h-Ix-4Zh" secondAttribute="bottom" id="mBM-el-Ieg"/>
+                            <constraint firstItem="k0h-Ix-4Zh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="mhk-Xb-Fur"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="yXo-Qi-gJP" secondAttribute="trailing" id="zDu-MB-41W"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="navTitleLabel" destination="yj2-jv-WiC" id="HE0-ME-Tgz"/>
+                        <outlet property="tableView" destination="k0h-Ix-4Zh" id="Tdz-tf-bBd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="63.768115942028992" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ico_community_close" width="14" height="14"/>
+        <namedColor name="gray300">
+            <color red="0.88599997758865356" green="0.9100000262260437" blue="0.94099998474121094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

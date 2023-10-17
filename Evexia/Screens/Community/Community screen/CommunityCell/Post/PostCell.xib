@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Regular.ttf">
+            <string>NunitoSans-Regular</string>
+        </array>
+        <array key="NunitoSans-SemiBold.ttf">
+            <string>NunitoSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PostCell" customModule="Evexia_Production" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="545"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="545"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dbc-lW-jUi" userLabel="CornerView">
+                        <rect key="frame" x="16" y="0.0" width="311" height="529"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="HaB-aM-fDh">
+                                <rect key="frame" x="16" y="16" width="40" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="h1D-6B-LV5"/>
+                                    <constraint firstAttribute="width" constant="40" id="n2D-dF-qcn"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Betterhelp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAn-zj-XcX">
+                                <rect key="frame" x="68" y="17" width="193" height="22"/>
+                                <fontDescription key="fontDescription" name="NunitoSans-SemiBold" family="Nunito Sans" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="fnX-ZN-Naq">
+                                <rect key="frame" x="6" y="446" width="92" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vYV-di-aCS">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="59z-tm-pIp"/>
+                                            <constraint firstAttribute="width" constant="44" id="7O3-s8-w5D"/>
+                                        </constraints>
+                                        <state key="normal" image="ico_community_heart"/>
+                                        <connections>
+                                            <action selector="tapLike:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="DDH-Yl-yoY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pMU-Gu-ATh">
+                                        <rect key="frame" x="48" y="0.0" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Ajx-QS-ccq"/>
+                                            <constraint firstAttribute="width" constant="44" id="hI8-80-Nyu"/>
+                                        </constraints>
+                                        <state key="normal" image="ico_community_comment"/>
+                                        <connections>
+                                            <action selector="tapComment:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="sB6-EN-6JA"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="07Q-xg-INI">
+                                        <rect key="frame" x="92" y="0.0" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="7D2-gY-32n"/>
+                                            <constraint firstAttribute="width" constant="44" id="tta-JW-L8e"/>
+                                        </constraints>
+                                        <state key="normal" image="ico_community_reply"/>
+                                        <connections>
+                                            <action selector="tapShares:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="cHk-Zo-k6g"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 hours ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBc-2f-g4v">
+                                <rect key="frame" x="68" y="40" width="193" height="16.5"/>
+                                <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="12"/>
+                                <color key="textColor" name="gray500"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tRi-HQ-gFF">
+                                <rect key="frame" x="261" y="14" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="bjz-Ft-rDN"/>
+                                    <constraint firstAttribute="height" constant="44" id="wkk-Vw-6GC"/>
+                                </constraints>
+                                <state key="normal" image="ico_community_stroke"/>
+                                <connections>
+                                    <action selector="tapPostEditButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Z5T-Z8-GWJ"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="foH-il-PcR">
+                                <rect key="frame" x="0.0" y="74" width="311" height="370"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Oxu-7X-FJ5">
+                                        <rect key="frame" x="0.0" y="0.0" width="311" height="50"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5zW-7S-9Mu" customClass="AttributedLabel" customModule="Atributika">
+                                                <rect key="frame" x="16" y="0.0" width="279" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="numberOfLines">
+                                                        <integer key="value" value="0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <edgeInsets key="layoutMargins" top="0.0" left="16" bottom="0.0" right="16"/>
+                                    </stackView>
+                                    <collectionView verifyAmbiguity="off" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ngx-bo-969">
+                                        <rect key="frame" x="0.0" y="56" width="311" height="279"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ngx-bo-969" secondAttribute="height" multiplier="1:1" constant="32" id="pKQ-zc-ZUk"/>
+                                        </constraints>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Chg-JS-mrM">
+                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                    </collectionView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="102" translatesAutoresizingMaskIntoConstraints="NO" id="P72-PU-c1R">
+                                        <rect key="frame" x="0.0" y="341" width="311" height="29"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIy-3H-sw6">
+                                                <rect key="frame" x="0.0" y="0.0" width="35" height="29"/>
+                                                <fontDescription key="fontDescription" name="NunitoSans-SemiBold" family="Nunito Sans" pointSize="12"/>
+                                                <state key="normal" title="1 likes">
+                                                    <color key="titleColor" name="gray700"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="openLikesList:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ED1-kL-OaL"/>
+                                                </connections>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="d0y-6D-7T6">
+                                                <rect key="frame" x="244" y="0.0" width="67" height="29"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sja-JS-NGc">
+                                                        <rect key="frame" x="0.0" y="0.0" width="67" height="29"/>
+                                                        <fontDescription key="fontDescription" name="NunitoSans-SemiBold" family="Nunito Sans" pointSize="12"/>
+                                                        <state key="normal" title="1 comments">
+                                                            <color key="titleColor" name="gray700"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="openCommentsList:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="F8K-7k-O48"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8K-Bf-zCT">
+                                                        <rect key="frame" x="67" y="0.0" width="0.0" height="29"/>
+                                                        <fontDescription key="fontDescription" name="NunitoSans-SemiBold" family="Nunito Sans" pointSize="12"/>
+                                                        <state key="normal" title="1 shared">
+                                                            <color key="titleColor" name="gray700"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="openSharesList:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="2i9-2I-bjg"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="tfp-KT-s6t">
+                                <rect key="frame" x="98" y="383" width="115.5" height="26"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="pageIndicatorTintColor" name="gray300"/>
+                                <color key="currentPageIndicatorTintColor" name="orange"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pAn-zj-XcX" firstAttribute="top" secondItem="dbc-lW-jUi" secondAttribute="top" constant="17" id="4dc-m9-sp6"/>
+                            <constraint firstItem="foH-il-PcR" firstAttribute="top" secondItem="tRi-HQ-gFF" secondAttribute="bottom" constant="16" id="6zg-bh-Lgu"/>
+                            <constraint firstItem="HaB-aM-fDh" firstAttribute="leading" secondItem="dbc-lW-jUi" secondAttribute="leading" constant="16" id="8bk-aw-Pzk"/>
+                            <constraint firstItem="ZBc-2f-g4v" firstAttribute="leading" secondItem="HaB-aM-fDh" secondAttribute="trailing" constant="12" id="ExK-it-eDs"/>
+                            <constraint firstAttribute="trailing" secondItem="foH-il-PcR" secondAttribute="trailing" id="GZR-OS-RsY"/>
+                            <constraint firstItem="fnX-ZN-Naq" firstAttribute="top" secondItem="foH-il-PcR" secondAttribute="bottom" constant="2" id="H46-3Y-kao"/>
+                            <constraint firstItem="ZBc-2f-g4v" firstAttribute="top" secondItem="pAn-zj-XcX" secondAttribute="bottom" constant="1" id="Quc-bs-QDl"/>
+                            <constraint firstItem="HaB-aM-fDh" firstAttribute="top" secondItem="dbc-lW-jUi" secondAttribute="top" constant="16" id="Zvq-dW-2SP"/>
+                            <constraint firstItem="tfp-KT-s6t" firstAttribute="bottom" secondItem="ngx-bo-969" secondAttribute="bottom" id="d3C-3d-W70"/>
+                            <constraint firstItem="pAn-zj-XcX" firstAttribute="leading" secondItem="HaB-aM-fDh" secondAttribute="trailing" constant="12" id="eL4-PB-jh3"/>
+                            <constraint firstAttribute="trailing" secondItem="tRi-HQ-gFF" secondAttribute="trailing" constant="6" id="hvp-cb-DO1"/>
+                            <constraint firstItem="tfp-KT-s6t" firstAttribute="centerX" secondItem="dbc-lW-jUi" secondAttribute="centerX" id="lKz-vb-Kee"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="fnX-ZN-Naq" secondAttribute="bottom" priority="999" constant="5" id="lvu-6f-gPv"/>
+                            <constraint firstItem="fnX-ZN-Naq" firstAttribute="leading" secondItem="dbc-lW-jUi" secondAttribute="leading" constant="6" id="mCQ-gy-6AJ"/>
+                            <constraint firstItem="foH-il-PcR" firstAttribute="leading" secondItem="dbc-lW-jUi" secondAttribute="leading" id="o7u-4J-bAp"/>
+                            <constraint firstItem="tRi-HQ-gFF" firstAttribute="leading" secondItem="pAn-zj-XcX" secondAttribute="trailing" id="o85-jV-QuD"/>
+                            <constraint firstItem="tRi-HQ-gFF" firstAttribute="top" secondItem="dbc-lW-jUi" secondAttribute="top" constant="14" id="sNU-Jn-pca"/>
+                            <constraint firstItem="tRi-HQ-gFF" firstAttribute="leading" secondItem="ZBc-2f-g4v" secondAttribute="trailing" id="y3c-dg-ckw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="dbc-lW-jUi" secondAttribute="trailing" constant="16" id="8cG-k3-55B"/>
+                    <constraint firstItem="dbc-lW-jUi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Dm1-Ww-Lyj"/>
+                    <constraint firstAttribute="bottom" secondItem="dbc-lW-jUi" secondAttribute="bottom" constant="16" id="hee-2I-dRq"/>
+                    <constraint firstItem="dbc-lW-jUi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="vll-Gc-zcz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="additionalMenuButton" destination="tRi-HQ-gFF" id="7ri-cY-ZnR"/>
+                <outlet property="avatarImageView" destination="HaB-aM-fDh" id="AS5-fB-gvl"/>
+                <outlet property="collectionView" destination="ngx-bo-969" id="xLE-4y-C7K"/>
+                <outlet property="commentsButton" destination="sja-JS-NGc" id="chh-hT-NtA"/>
+                <outlet property="cornerView" destination="dbc-lW-jUi" id="34u-sk-Nwg"/>
+                <outlet property="likeToPostButton" destination="vYV-di-aCS" id="Adt-al-imI"/>
+                <outlet property="likesButton" destination="iIy-3H-sw6" id="8Zu-cg-Voe"/>
+                <outlet property="pageControl" destination="tfp-KT-s6t" id="f5V-z7-ikW"/>
+                <outlet property="postTextView" destination="5zW-7S-9Mu" id="aKk-Ke-1VJ"/>
+                <outlet property="sharesButton" destination="L8K-Bf-zCT" id="ZXo-ZG-xRR"/>
+                <outlet property="socialListsStackView" destination="P72-PU-c1R" id="hsg-Ar-5vH"/>
+                <outlet property="subTitleLabel" destination="ZBc-2f-g4v" id="Qj0-aX-rg4"/>
+                <outlet property="titleLabel" destination="pAn-zj-XcX" id="ZPg-mf-twV"/>
+            </connections>
+            <point key="canvasLocation" x="-58.399999999999999" y="221.73913043478262"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="avatar" width="59" height="59"/>
+        <image name="ico_community_comment" width="24" height="24"/>
+        <image name="ico_community_heart" width="24" height="24"/>
+        <image name="ico_community_reply" width="24" height="24"/>
+        <image name="ico_community_stroke" width="4" height="18"/>
+        <namedColor name="gray300">
+            <color red="0.88235294117647056" green="0.90980392156862744" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray500">
+            <color red="0.62745098039215685" green="0.68235294117647061" blue="0.75294117647058822" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray700">
+            <color red="0.28999999165534973" green="0.33300000429153442" blue="0.40799999237060547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="orange">
+            <color red="0.89803921568627454" green="0.57647058823529407" blue="0.20784313725490197" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

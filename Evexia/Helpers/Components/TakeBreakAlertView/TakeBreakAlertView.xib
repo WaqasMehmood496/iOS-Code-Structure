@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+        <array key="NunitoSans-Regular.ttf">
+            <string>NunitoSans-Regular</string>
+        </array>
+        <array key="NunitoSans-SemiBold.ttf">
+            <string>NunitoSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TakeBreakAlertView" customModule="Evexia_Production" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E16-9S-KUv">
+                    <rect key="frame" x="15" y="339.5" width="384" height="227"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take a break" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxq-fp-oLX">
+                            <rect key="frame" x="15" y="30" width="354" height="33"/>
+                            <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="24"/>
+                            <color key="textColor" name="gray900"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="You have two “take a break” options to use per month. Click here to use your first break." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pby-d2-MI1">
+                            <rect key="frame" x="15" y="78" width="354" height="44"/>
+                            <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="16"/>
+                            <color key="textColor" name="gray700"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="jaQ-Xr-Giz">
+                            <rect key="frame" x="15" y="147" width="354" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOH-3m-Qun">
+                                    <rect key="frame" x="0.0" y="0.0" width="169.5" height="50"/>
+                                    <fontDescription key="fontDescription" name="NunitoSans-SemiBold" family="Nunito Sans" pointSize="20"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Cancel">
+                                        <color key="titleColor" name="gray900"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="cancelButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="JBm-hc-Dcm"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMU-Kx-duG">
+                                    <rect key="frame" x="184.5" y="0.0" width="169.5" height="50"/>
+                                    <color key="backgroundColor" name="orange"/>
+                                    <fontDescription key="fontDescription" name="NunitoSans-SemiBold" family="Nunito Sans" pointSize="20"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Take a break">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="takeButtonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="89i-2m-Xfo"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="z76-S6-8n4"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="nxq-fp-oLX" secondAttribute="trailing" constant="15" id="1SF-x2-qNz"/>
+                        <constraint firstAttribute="trailing" secondItem="jaQ-Xr-Giz" secondAttribute="trailing" constant="15" id="8bo-OY-cXq"/>
+                        <constraint firstAttribute="bottom" secondItem="jaQ-Xr-Giz" secondAttribute="bottom" constant="30" id="9hX-8v-xkE"/>
+                        <constraint firstItem="jaQ-Xr-Giz" firstAttribute="leading" secondItem="E16-9S-KUv" secondAttribute="leading" constant="15" id="CCz-Fc-NUq"/>
+                        <constraint firstAttribute="trailing" secondItem="pby-d2-MI1" secondAttribute="trailing" constant="15" id="IuT-iW-mZt"/>
+                        <constraint firstItem="pby-d2-MI1" firstAttribute="leading" secondItem="E16-9S-KUv" secondAttribute="leading" constant="15" id="Mqe-wu-qU0"/>
+                        <constraint firstItem="pby-d2-MI1" firstAttribute="top" secondItem="nxq-fp-oLX" secondAttribute="bottom" constant="15" id="R1R-t4-1Ul"/>
+                        <constraint firstItem="nxq-fp-oLX" firstAttribute="top" secondItem="E16-9S-KUv" secondAttribute="top" constant="30" id="qRN-DS-GAh"/>
+                        <constraint firstItem="nxq-fp-oLX" firstAttribute="leading" secondItem="E16-9S-KUv" secondAttribute="leading" constant="15" id="rYT-Ab-22I"/>
+                        <constraint firstItem="jaQ-Xr-Giz" firstAttribute="top" secondItem="pby-d2-MI1" secondAttribute="bottom" constant="25" id="vgs-55-USf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="E16-9S-KUv" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="3xN-bc-mtV"/>
+                <constraint firstItem="E16-9S-KUv" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="Hnz-XE-0X9"/>
+                <constraint firstItem="E16-9S-KUv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="mL5-Qm-9Vu"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="E16-9S-KUv" secondAttribute="trailing" constant="15" id="xcM-fA-zRd"/>
+            </constraints>
+            <connections>
+                <outlet property="alertDesriptionLabel" destination="pby-d2-MI1" id="ZZe-g7-AME"/>
+                <outlet property="alertTitleLabel" destination="nxq-fp-oLX" id="SvN-em-yRu"/>
+                <outlet property="cancelButton" destination="ZOH-3m-Qun" id="34L-tZ-l8v"/>
+                <outlet property="shadowView" destination="E16-9S-KUv" id="I0G-ic-bTk"/>
+                <outlet property="takeButton" destination="EMU-Kx-duG" id="COq-Az-IHM"/>
+            </connections>
+            <point key="canvasLocation" x="95.652173913043484" y="-201.5625"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="gray700">
+            <color red="0.28999999165534973" green="0.33300000429153442" blue="0.40799999237060547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray900">
+            <color red="0.10196078431372549" green="0.12156862745098039" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="orange">
+            <color red="1" green="0.65098039215686276" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

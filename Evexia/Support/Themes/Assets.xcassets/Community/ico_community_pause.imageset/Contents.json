@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ico_community_pause.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

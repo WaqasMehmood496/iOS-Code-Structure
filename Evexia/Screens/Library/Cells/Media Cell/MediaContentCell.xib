@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Regular.ttf">
+            <string>NunitoSans-Regular</string>
+        </array>
+        <array key="NunitoSans-SemiBold.ttf">
+            <string>NunitoSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="110" id="KGk-i7-Jjw" customClass="MediaContentCell" customModule="Evexia_Production" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="353" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="353" height="110"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Uj8-H0-Qpo">
+                        <rect key="frame" x="0.0" y="0.0" width="353" height="112"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="frb-O5-QhH">
+                                <rect key="frame" x="16" y="16" width="297" height="80"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Js-K7-CZS">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="5c5-Rz-FvL"/>
+                                            <constraint firstAttribute="height" constant="80" id="wab-sV-EPU"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o8y-Gd-jTm">
+                                        <rect key="frame" x="86" y="0.0" width="106" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="106" id="J8I-Lh-WbJ"/>
+                                            <constraint firstAttribute="height" constant="80" id="lm8-Bz-JdW"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GQ1-aF-l1d">
+                                        <rect key="frame" x="92" y="0.0" width="205" height="74"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 Minute Meal Challenge. Teriyaki salmon" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAd-nh-YSm">
+                                                <rect key="frame" x="0.0" y="0.0" width="182.5" height="44"/>
+                                                <fontDescription key="fontDescription" name="NunitoSans-SemiBold" family="Nunito Sans" pointSize="16"/>
+                                                <color key="textColor" name="gray900"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Bessie Cooper" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZfG-y7-dtF">
+                                                <rect key="frame" x="0.0" y="52" width="103" height="22"/>
+                                                <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="16"/>
+                                                <color key="textColor" name="gray600"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7N6-Ey-csg">
+                                <rect key="frame" x="321" y="16" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="GXz-Wx-7nd"/>
+                                    <constraint firstAttribute="width" constant="24" id="xCh-L3-IIV"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="" image="unfavorite"/>
+                                <connections>
+                                    <action selector="favoriteButtonDidTap:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="AvY-D9-eDW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <edgeInsets key="layoutMargins" top="16" left="16" bottom="16" right="8"/>
+                    </stackView>
+                    <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3r8-WS-U5q">
+                        <rect key="frame" x="139" y="40" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="30B-a5-dBm"/>
+                            <constraint firstAttribute="height" constant="32" id="S64-Le-hMW"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="ico_community_play"/>
+                        <connections>
+                            <action selector="playButtonDidTap:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="NYp-os-Ajq"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Uj8-H0-Qpo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Wed-dc-N4p"/>
+                    <constraint firstAttribute="bottom" secondItem="Uj8-H0-Qpo" secondAttribute="bottom" id="XKR-Wu-o3C"/>
+                    <constraint firstItem="3r8-WS-U5q" firstAttribute="centerX" secondItem="o8y-Gd-jTm" secondAttribute="centerX" id="Z4W-RG-8Nq"/>
+                    <constraint firstItem="Uj8-H0-Qpo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ZMZ-hf-ipi"/>
+                    <constraint firstItem="3r8-WS-U5q" firstAttribute="centerY" secondItem="o8y-Gd-jTm" secondAttribute="centerY" id="gxk-7z-S6K"/>
+                    <constraint firstAttribute="trailing" secondItem="Uj8-H0-Qpo" secondAttribute="trailing" id="tOg-Uu-qVO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="authorLabel" destination="ZfG-y7-dtF" id="tL5-Zu-Old"/>
+                <outlet property="favoriteButton" destination="7N6-Ey-csg" id="1uN-jS-r2m"/>
+                <outlet property="playButton" destination="3r8-WS-U5q" id="GjU-A7-uM7"/>
+                <outlet property="previewImageView" destination="2Js-K7-CZS" id="KB9-1i-i3A"/>
+                <outlet property="titleLabel" destination="iAd-nh-YSm" id="T6O-O3-7rQ"/>
+                <outlet property="videoPreviewImageView" destination="o8y-Gd-jTm" id="SUS-de-rNF"/>
+            </connections>
+            <point key="canvasLocation" x="154.34782608695653" y="131.25"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ico_community_play" width="64" height="64"/>
+        <image name="unfavorite" width="24" height="24"/>
+        <namedColor name="gray600">
+            <color red="0.44299998879432678" green="0.50199997425079346" blue="0.58799999952316284" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray900">
+            <color red="0.10196078431372549" green="0.12156862745098039" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

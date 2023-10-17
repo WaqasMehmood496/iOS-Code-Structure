@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+        <array key="NunitoSans-SemiBold.ttf">
+            <string>NunitoSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Category DetailsVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="PDCategoryDetailsVC" id="Y6W-OH-hqX" customClass="PDCategoryDetailsVC" customModule="Evexia_Production" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="VrA-v4-V0l">
+                                <rect key="frame" x="15" y="0.0" width="345" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_community_noConnect" translatesAutoresizingMaskIntoConstraints="NO" id="cae-Uw-9Yl">
+                                <rect key="frame" x="50" y="196" width="275" height="275"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cae-Uw-9Yl" secondAttribute="height" multiplier="1:1" id="jNa-m1-Vrc"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8iw-UU-67p">
+                                <rect key="frame" x="60" y="235" width="255" height="197"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Whoops!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SbH-CY-VNa">
+                                        <rect key="frame" x="0.0" y="110" width="255" height="33"/>
+                                        <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="24"/>
+                                        <color key="textColor" name="gray850"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There is no material at this category yet" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAJ-T3-2tM">
+                                        <rect key="frame" x="0.0" y="153" width="255" height="44"/>
+                                        <fontDescription key="fontDescription" name="NunitoSans-SemiBold" family="Nunito Sans" pointSize="16"/>
+                                        <color key="textColor" name="gray700"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pdPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="i1y-TE-5iO">
+                                        <rect key="frame" x="87.5" y="0.0" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="QRR-HS-ByK"/>
+                                            <constraint firstAttribute="width" constant="80" id="q9A-Fb-8kB"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="SbH-CY-VNa" firstAttribute="top" secondItem="i1y-TE-5iO" secondAttribute="bottom" constant="30" id="HJN-aO-rtj"/>
+                                    <constraint firstAttribute="bottom" secondItem="WAJ-T3-2tM" secondAttribute="bottom" id="KTm-2c-Dmh"/>
+                                    <constraint firstAttribute="trailing" secondItem="SbH-CY-VNa" secondAttribute="trailing" id="Lee-j0-gQ6"/>
+                                    <constraint firstItem="SbH-CY-VNa" firstAttribute="leading" secondItem="8iw-UU-67p" secondAttribute="leading" id="PF3-GK-w4s"/>
+                                    <constraint firstItem="i1y-TE-5iO" firstAttribute="top" secondItem="8iw-UU-67p" secondAttribute="top" id="Wqq-sB-CB2"/>
+                                    <constraint firstAttribute="trailing" secondItem="WAJ-T3-2tM" secondAttribute="trailing" id="Yfw-nD-JDv"/>
+                                    <constraint firstItem="i1y-TE-5iO" firstAttribute="centerX" secondItem="8iw-UU-67p" secondAttribute="centerX" id="cv1-ix-AKj"/>
+                                    <constraint firstItem="WAJ-T3-2tM" firstAttribute="leading" secondItem="8iw-UU-67p" secondAttribute="leading" id="iKr-Kv-8ko"/>
+                                    <constraint firstItem="WAJ-T3-2tM" firstAttribute="top" secondItem="SbH-CY-VNa" secondAttribute="bottom" constant="10" id="x2T-iD-4hL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="gray100"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="VrA-v4-V0l" secondAttribute="trailing" constant="15" id="6Id-je-sDr"/>
+                            <constraint firstItem="8iw-UU-67p" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="8sJ-ix-BhX"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="VrA-v4-V0l" secondAttribute="bottom" id="EyT-my-Cq5"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="8iw-UU-67p" secondAttribute="trailing" constant="60" id="P6P-Ia-uTD"/>
+                            <constraint firstItem="cae-Uw-9Yl" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="TZf-T3-Njd"/>
+                            <constraint firstItem="cae-Uw-9Yl" firstAttribute="width" secondItem="cae-Uw-9Yl" secondAttribute="height" multiplier="1:1" id="WlX-PW-lMT"/>
+                            <constraint firstAttribute="trailing" secondItem="cae-Uw-9Yl" secondAttribute="trailing" constant="50" id="XZo-qg-8Xp"/>
+                            <constraint firstItem="VrA-v4-V0l" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="jya-s4-FGI"/>
+                            <constraint firstItem="cae-Uw-9Yl" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="pK3-af-ybC"/>
+                            <constraint firstItem="8iw-UU-67p" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="60" id="pxD-M3-hEl"/>
+                            <constraint firstItem="8iw-UU-67p" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="uTp-kz-xJ5"/>
+                            <constraint firstItem="VrA-v4-V0l" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="wbn-y7-EgP"/>
+                            <constraint firstItem="cae-Uw-9Yl" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="50" id="zKE-t4-qag"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emptyDataView" destination="8iw-UU-67p" id="GIq-88-JsL"/>
+                        <outlet property="noConnectionImage" destination="cae-Uw-9Yl" id="pba-AT-Oty"/>
+                        <outlet property="tableView" destination="VrA-v4-V0l" id="7Jn-C9-Vj9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-0.80000000000000004" y="76.911544227886068"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image_community_noConnect" width="514" height="514"/>
+        <image name="pdPlaceholder" width="80" height="80"/>
+        <namedColor name="gray100">
+            <color red="0.96899998188018799" green="0.98000001907348633" blue="0.98799997568130493" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray700">
+            <color red="0.28999999165534973" green="0.33300000429153442" blue="0.40799999237060547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray850">
+            <color red="0.12156862745098039" green="0.14509803921568629" blue="0.19215686274509805" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

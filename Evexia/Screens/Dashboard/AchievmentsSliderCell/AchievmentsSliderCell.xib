@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="252" id="KGk-i7-Jjw" customClass="AchievmentsSliderCell" customModule="Evexia_Production" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="252"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="252"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="9oD-sq-7mL">
+                        <rect key="frame" x="0.0" y="25" width="320" height="175"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="175" id="j4q-kM-Ogs"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="EXi-XX-bcQ">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Net-ZZ-TM2">
+                        <rect key="frame" x="0.0" y="215" width="320" height="37"/>
+                        <color key="pageIndicatorTintColor" name="orangeInactive"/>
+                        <color key="currentPageIndicatorTintColor" name="orange"/>
+                    </pageControl>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Net-ZZ-TM2" firstAttribute="top" secondItem="9oD-sq-7mL" secondAttribute="bottom" constant="15" id="4gJ-oP-X6t"/>
+                    <constraint firstAttribute="trailing" secondItem="9oD-sq-7mL" secondAttribute="trailing" id="YYl-ox-2yR"/>
+                    <constraint firstAttribute="bottom" secondItem="Net-ZZ-TM2" secondAttribute="bottom" id="YgE-Bw-ZJl"/>
+                    <constraint firstAttribute="trailing" secondItem="Net-ZZ-TM2" secondAttribute="trailing" id="de5-A6-jkl"/>
+                    <constraint firstItem="Net-ZZ-TM2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="eBF-YE-K9K"/>
+                    <constraint firstItem="9oD-sq-7mL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="k1R-8b-OBY"/>
+                    <constraint firstItem="9oD-sq-7mL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="nYj-SN-xM2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="pageControl" destination="Net-ZZ-TM2" id="jOL-m2-xWQ"/>
+                <outlet property="sliderCollectionView" destination="9oD-sq-7mL" id="GEt-dt-3jQ"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="145.98214285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="orange">
+            <color red="1" green="0.65098039215686276" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="orangeInactive">
+            <color red="1" green="0.85900002717971802" blue="0.72200000286102295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

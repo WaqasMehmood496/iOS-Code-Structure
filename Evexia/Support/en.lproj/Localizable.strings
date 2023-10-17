@@ -1,0 +1,127 @@
+/* 
+  Localizable.strings
+  Evexia
+
+  Created by Yura Yatseyko on 22.06.2021.
+  
+*/
+
+// SignInViewController
+"Welcome back" = "Welcome back";
+"or log in with" = "or log in with";
+"Not registered yet?" = "Not registered yet?";
+"Forgot password?" = "Forgot password?";
+"Log in" = "Log in";
+"Sign up" = "Sign up";
+"Your password must have at least 8 characters" = "Your password must have at least 8 characters";
+"Invalid email address, please try again" = "Invalid email address, please try again";
+
+// SignUpVC
+"Create account" = "Create account";
+"or sign up with" = "or sign up with";
+"Already registered?" = "Already registered?";
+"Your password must have at least 8 characters" = "Your password must have at least 8 characters";
+"Invalid email address, please try again" = "Invalid email address, please try again";
+"I agree to the Terms and Privacy Policy." = "I agree to the <terms>Terms</terms> and <privacy>Privacy Policy</privacy>.";
+
+// VerivifationVC + PasswordEwcovery Flow
+"Please check your inbox and click on the activation link to complete registration process. If you don’t get an email within a few minutes, please retry." = "Please check your inbox and click on the activation link to complete registration process. If you don’t get an email within a few minutes, please retry.";
+"Activation mail has been sent to" = "Activation mail has been sent to";
+"Back" = "Back";
+"Retry" = "Retry";
+
+// PasswordRecoveryVC
+"Password recovery" = "Password recovery";
+"Don’t worry, happens to the best of us." = "Don’t worry, happens to the best of us.";
+"Email" = "Email";
+"Email me a recovery link" = "Email me a recovery link";
+
+// RecoveryVerificationVC
+"An email has been sent. Please click the link when you get it." = "An email has been sent. Please click the link when you get it.";
+"Password recovery" = "Password recovery";
+"Back to home" = "Back to home";
+"There is no going back..." = "There is no going back...";
+"By deleting your account, all of your data disappears forever. Are your sure?" = "By deleting your account, all of your data disappears forever. Are your sure?";
+"You want to log out?" = "You want to log out?";
+"Your activity and all your data will be saved until next login." = "Your activity and all your data will be saved until next login.";
+"Delete account" = "Delete account";
+"Log out" = "Log out";
+"Cancel" = "Cancel";
+"The email address doesn’t match any account" = "The email address doesn’t match any account";
+"The password doesn’t match. Try again?" = "The password doesn’t match. Try again?";
+// OnboardingVC
+"Wellbeing consists of four major pillars. How we FEEL, EAT, MOVE and CONNECT." = "Wellbeing consists of four major pillars. How we FEEL, EAT, MOVE and CONNECT.";
+"We want to know EXACTLY what you consider to be the most important wellbeing elements to you." = "We want to know EXACTLY what you consider to be the most important wellbeing elements to you.";
+"Place them in order of significance to your personal wellbeing. My Day will help you do the rest." = "Place them in order of significance to your personal wellbeing. My Day will help you do the rest.";
+
+//SetPasswordVC
+"Create new password" = "Create new password";
+"Your new password must be different from previous used password" = "Your new password must be different from previous used password";
+"Set password" = "Set password";
+"Confirm password" = "Confirm password";
+"Update Password" = "Update Password";
+"Your password must have at least 8 characters" = "Your password must have at least 8 characters";
+
+//MyWhyStatements
+"Be more active with loved ones" = "Be more active with loved ones";
+"Embrace opportunities to have fun" = "Embrace opportunities to have fun";
+"Improve my energy & focus" = "Improve my energy & focus";
+"Be a role model" = "Be a role model";
+"To improve my energy and boost my self-esteem" = "To improve my energy and boost my self-esteem";
+"Connect with nature" = "Connect with nature";
+"Appreciate the smaller things in life" = "Appreciate the smaller things in life";
+"Eat for health & enjoyment to make the most of every meal" = "Eat for health & enjoyment to make the most of every meal";
+"Decompress & be present" = "Decompress & be present";
+"Move to reduce stress & anxiety" = "Move to reduce stress & anxiety";
+"Contextualise negative emotions" = "Contextualise negative emotions";
+"Change how I eat for my long term health" = "Change how I eat for my long term health";
+"Disconnect to reduce stress and anxiety" = "Disconnect to reduce stress and anxiety";
+"Fulfil my potential" = "Fulfil my potential";
+
+//MyWhyVC
+"My Why" = "My Why";
+"Set yourself a purpose" = "Set yourself a purpose";
+"Setting your own personal “why” will act as a reminder to you to stick to you plan." = "Setting your own personal “why” will act as a reminder to you to stick to you plan.";
+"Choose up to 5 phrases that best match your motivation." = "Choose up to 5 phrases that best match your motivation.";
+
+// Countries
+"Countries" = "Countries";
+
+// Advise and Support
+"Advise and Support" = "Advise and Support";
+"Internal HR Support" = "Internal HR Support";
+"Human resources manager" = "Human resources manager";
+"Employee assistance program" = "Employee assistance program";
+"Additional Mental Health Services" = "Additional Mental Health Services";
+"Select the appropriate service to access advice & support" = "Select the appropriate service to access advice & support";
+
+// Benefits
+"Benefits" = "Benefits";
+
+//Evexia Wellness Community
+"Evexia Wellness Community" = "My Day Wellness Community";
+"What’s on your mind?" = "What’s on your mind?";
+"Create Post" = "Create Post";
+"Take a photo" = "Take a photo";
+"Select from camera roll" = "Select from camera roll";
+"Edit Post" = "Edit Post";
+"Delete Post" = "Delete Post";
+"Create" = "Create";
+"Edit" = "Edit";
+
+// Wellbeing
+"Well-being score" = "Wellbeing score";
+"Week" = "Week";
+"Month" = "Month";
+"Year" = "Year";
+
+//Daily task achivment
+"You Completed 20 Daily Tasks" = "You Completed 20 Daily Tasks";
+"You Completed 50 Daily Tasks" = "You Completed 50 Daily Tasks";
+"You Completed 100 Daily Tasks" = "You Completed 100 Daily Tasks";
+"You Completed 175 Daily Tasks" = "You Completed 175 Daily Tasks";
+"You Completed 250 Daily Tasks" = "You Completed 250 Daily Tasks";
+"You Completed 365 Daily Tasks" = "You Completed 365 Daily Tasks";
+
+//Settings
+"Add Touch ID / Face ID" = "Add Touch ID / Face ID";

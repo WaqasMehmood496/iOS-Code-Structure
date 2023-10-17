@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--VerificationVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="VerificationVC" id="Y6W-OH-hqX" customClass="VerificationVC" customModule="Evexia_Production" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mydaylogo" translatesAutoresizingMaskIntoConstraints="NO" id="T7I-qI-MsM">
+                                <rect key="frame" x="140.5" y="76" width="133" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="TSf-uB-Hm1"/>
+                                    <constraint firstAttribute="width" constant="133" id="p6v-qx-mxj"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="lAd-dr-2H0">
+                                <rect key="frame" x="16" y="204" width="382" height="310.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2zJ-AZ-kWO" customClass="NotificationView" customModule="Evexia_Production" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="310.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="2zJ-AZ-kWO" firstAttribute="height" relation="greaterThanOrEqual" secondItem="lAd-dr-2H0" secondAttribute="height" id="ZfA-Ag-Psg"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="gray200"/>
+                        <constraints>
+                            <constraint firstItem="T7I-qI-MsM" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="0q4-3Y-PbU"/>
+                            <constraint firstItem="lAd-dr-2H0" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="160" id="8ix-MX-1j2"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="lAd-dr-2H0" secondAttribute="trailing" constant="16" id="GxJ-f4-CTe"/>
+                            <constraint firstItem="T7I-qI-MsM" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="32" id="LsQ-HB-qlv"/>
+                            <constraint firstItem="lAd-dr-2H0" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="fOi-49-FCl"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="notificationView" destination="2zJ-AZ-kWO" id="MEK-ta-AoU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26.086956521739133" y="40.848214285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mydaylogo" width="109" height="50"/>
+        <namedColor name="gray200">
+            <color red="0.92900002002716064" green="0.94900000095367432" blue="0.96899998188018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

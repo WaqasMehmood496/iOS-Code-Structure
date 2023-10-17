@@ -1,0 +1,27 @@
+Feature:
+EV-148 Questionnaire
+
+Add availability to complete survey and observe result for wellbeing score
+ - Update statistic chart for wellbeing score
+ - Update wellbeing score on profile screen
+
+Not implemented:
+Redirection to library and support screens
+Showing different labels for different score for wellbeing (not approved)
+
+Fix:
+EV-313:
+Fix data source for wellbeing score
+
+
+EV-326
+Fix presenting data for different periods
+
+EV-328
+Fix placeholders for no data state
+
+EV-328
+Fix calculation for average week steps
+
+Other:
+Fix rings for week and daily goals on chart

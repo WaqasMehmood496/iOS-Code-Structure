@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfileSettingsContentCell" rowHeight="167" id="KGk-i7-Jjw" customClass="ProfileSettingsContentCell" customModule="Evexia_Production" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="167"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="376" height="167"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MBq-83-TkC">
+                        <rect key="frame" x="0.0" y="0.0" width="376" height="167"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fV2-sc-fdK">
+                                <rect key="frame" x="8" y="8" width="360" height="151"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ReA-4m-0m9">
+                                        <rect key="frame" x="0.0" y="0.0" width="360" height="151"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ReA-4m-0m9" firstAttribute="leading" secondItem="fV2-sc-fdK" secondAttribute="leading" id="9TQ-S7-K5c"/>
+                                    <constraint firstItem="ReA-4m-0m9" firstAttribute="top" secondItem="fV2-sc-fdK" secondAttribute="top" id="IE7-3B-nCs"/>
+                                    <constraint firstAttribute="trailing" secondItem="ReA-4m-0m9" secondAttribute="trailing" id="cWz-WC-F0j"/>
+                                    <constraint firstAttribute="bottom" secondItem="ReA-4m-0m9" secondAttribute="bottom" id="nRn-2v-bKN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="MBq-83-TkC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Zkt-kU-kMS"/>
+                    <constraint firstItem="MBq-83-TkC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="bnL-cw-VjA"/>
+                    <constraint firstAttribute="trailing" secondItem="MBq-83-TkC" secondAttribute="trailing" id="fyv-Rn-Yj8"/>
+                    <constraint firstAttribute="bottom" secondItem="MBq-83-TkC" secondAttribute="bottom" id="rwS-CZ-4JX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="settingsTableView" destination="ReA-4m-0m9" id="VHp-2t-vbi"/>
+                <outlet property="shadowView" destination="fV2-sc-fdK" id="weJ-8Z-OCx"/>
+            </connections>
+            <point key="canvasLocation" x="4.3478260869565224" y="133.59375"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ExternalVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ExternalVC" id="Y6W-OH-hqX" customClass="ExternalVC" customModule="Evexia_Production" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8vc-JO-Bhn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Wpa-pE-pfA">
+                                        <rect key="frame" x="177.5" y="323.5" width="20" height="20"/>
+                                        <color key="color" red="0.27450980390000002" green="0.35686274509999999" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </activityIndicatorView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mydaylogo" translatesAutoresizingMaskIntoConstraints="NO" id="9Dg-rQ-kYp">
+                                        <rect key="frame" x="87" y="229.5" width="201" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="KGc-9z-9IX"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="9Dg-rQ-kYp" firstAttribute="centerY" secondItem="8vc-JO-Bhn" secondAttribute="centerY" constant="-40" id="H6o-bk-5S8"/>
+                                    <constraint firstAttribute="trailing" secondItem="9Dg-rQ-kYp" secondAttribute="trailing" constant="87" id="Vt3-AZ-nHX"/>
+                                    <constraint firstItem="9Dg-rQ-kYp" firstAttribute="leading" secondItem="8vc-JO-Bhn" secondAttribute="leading" constant="87" id="bxd-yj-ahn"/>
+                                    <constraint firstItem="Wpa-pE-pfA" firstAttribute="centerY" secondItem="8vc-JO-Bhn" secondAttribute="centerY" id="myH-35-dPq"/>
+                                    <constraint firstItem="Wpa-pE-pfA" firstAttribute="centerX" secondItem="8vc-JO-Bhn" secondAttribute="centerX" id="yxk-Lt-DEL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8vc-JO-Bhn" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="XVY-dh-MRP"/>
+                            <constraint firstItem="8vc-JO-Bhn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="qk3-wg-V0n"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="8vc-JO-Bhn" secondAttribute="trailing" id="u2d-bh-cle"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="8vc-JO-Bhn" secondAttribute="bottom" id="zbC-QY-PEo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loaderIndicator" destination="Wpa-pE-pfA" id="J71-gc-C86"/>
+                        <outlet property="logoImageView" destination="9Dg-rQ-kYp" id="c6c-zB-9Mx"/>
+                        <outlet property="webContainer" destination="8vc-JO-Bhn" id="Uwq-wh-pcb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141" y="61"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mydaylogo" width="109" height="50"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

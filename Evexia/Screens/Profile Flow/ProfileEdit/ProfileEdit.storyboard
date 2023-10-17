@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+        <array key="NunitoSans-SemiBold.ttf">
+            <string>NunitoSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Profile EditVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ProfileEditVC" id="Y6W-OH-hqX" customClass="ProfileEditVC" customModule="Evexia_Production" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4g2-Pc-pRO">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="7K5-PT-N0B">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="810"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="0xX-lv-qvk">
+                                                <rect key="frame" x="16" y="16" width="382" height="690"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="PML-xm-okx">
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="166"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CyS-XP-pim">
+                                                                <rect key="frame" x="126" y="0.0" width="130" height="130"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="bZX-F5-x1z">
+                                                                        <rect key="frame" x="5" y="5" width="120" height="120"/>
+                                                                        <color key="backgroundColor" name="gray300"/>
+                                                                    </imageView>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="130" id="0Gb-Wr-PVV"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="bZX-F5-x1z" secondAttribute="bottom" constant="5" id="7In-di-M8Q"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="bZX-F5-x1z" secondAttribute="trailing" constant="5" id="JDA-hM-fi0"/>
+                                                                    <constraint firstItem="bZX-F5-x1z" firstAttribute="top" secondItem="CyS-XP-pim" secondAttribute="top" constant="5" id="gSb-ld-q0F"/>
+                                                                    <constraint firstItem="bZX-F5-x1z" firstAttribute="leading" secondItem="CyS-XP-pim" secondAttribute="leading" constant="5" id="jVn-Kh-74C"/>
+                                                                    <constraint firstAttribute="height" constant="130" id="xwa-SJ-U9X"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awT-li-5nv">
+                                                                <rect key="frame" x="97" y="154" width="188" height="12"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="12" id="bot-mE-X6g"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="16"/>
+                                                                <state key="normal" title="Upload new profile photo">
+                                                                    <color key="titleColor" name="orange"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="uploadPhotoButtonDidTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="69x-GX-J1A"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="QzQ-KZ-Fcm">
+                                                        <rect key="frame" x="0.0" y="194" width="382" height="496"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dbk-4W-5dV">
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="496"/>
+                                                                <subviews>
+                                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tii-dM-mTs" customClass="IntrinsicTableView" customModule="Evexia_Production" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="496"/>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                    </tableView>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="tii-dM-mTs" firstAttribute="top" secondItem="Dbk-4W-5dV" secondAttribute="top" id="6yU-gT-NvH"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="tii-dM-mTs" secondAttribute="trailing" id="JLH-oa-Deg"/>
+                                                                    <constraint firstItem="tii-dM-mTs" firstAttribute="leading" secondItem="Dbk-4W-5dV" secondAttribute="leading" id="Moz-eF-fW2"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="tii-dM-mTs" secondAttribute="bottom" id="Uji-WB-L3G"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GjT-A7-mWK" customClass="RequestButton" customModule="Evexia_Production" customModuleProvider="target">
+                                                <rect key="frame" x="16" y="722" width="382" height="64"/>
+                                                <color key="backgroundColor" name="orange"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="64" id="a0a-ny-SKL"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NunitoSans-SemiBold" family="Nunito Sans" pointSize="20"/>
+                                                <state key="normal" title="Finish">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="finishButtonDidTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Hi1-S7-z1f"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <edgeInsets key="layoutMargins" top="16" left="16" bottom="24" right="16"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="gray100"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="7K5-PT-N0B" secondAttribute="bottom" id="2jt-JP-42M"/>
+                                    <constraint firstItem="7K5-PT-N0B" firstAttribute="width" secondItem="4g2-Pc-pRO" secondAttribute="width" id="8iC-H6-0qx"/>
+                                    <constraint firstItem="7K5-PT-N0B" firstAttribute="leading" secondItem="4g2-Pc-pRO" secondAttribute="leading" id="aBm-vA-BmZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="7K5-PT-N0B" secondAttribute="trailing" id="aG0-YV-NeZ"/>
+                                    <constraint firstItem="7K5-PT-N0B" firstAttribute="top" secondItem="4g2-Pc-pRO" secondAttribute="top" id="mTv-7U-KPw"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="gray100"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="4g2-Pc-pRO" secondAttribute="trailing" id="8RC-Jz-Z5o"/>
+                            <constraint firstItem="4g2-Pc-pRO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="FuF-j9-LX3"/>
+                            <constraint firstAttribute="bottom" secondItem="4g2-Pc-pRO" secondAttribute="bottom" id="POA-bP-AMX"/>
+                            <constraint firstItem="4g2-Pc-pRO" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="cE1-Fk-fNR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="avatarBackgroundView" destination="CyS-XP-pim" id="Fp0-uG-6a9"/>
+                        <outlet property="avatarImageView" destination="bZX-F5-x1z" id="76R-7S-yTT"/>
+                        <outlet property="profileTableView" destination="tii-dM-mTs" id="X4O-Nm-fnu"/>
+                        <outlet property="scrollView" destination="4g2-Pc-pRO" id="2EE-60-gpR"/>
+                        <outlet property="setAvatarButton" destination="awT-li-5nv" id="t3V-WY-fDH"/>
+                        <outlet property="setProfileButton" destination="GjT-A7-mWK" id="Gmo-vc-O6t"/>
+                        <outlet property="shadowView" destination="Dbk-4W-5dV" id="gTf-oK-ZSd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69.565217391304358" y="47.544642857142854"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="avatar" width="59" height="59"/>
+        <namedColor name="gray100">
+            <color red="0.96899998188018799" green="0.98000001907348633" blue="0.98799997568130493" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray300">
+            <color red="0.88599997758865356" green="0.9100000262260437" blue="0.94099998474121094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="orange">
+            <color red="1" green="0.65098039215686276" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

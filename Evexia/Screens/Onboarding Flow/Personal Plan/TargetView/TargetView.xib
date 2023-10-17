@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Regular.ttf">
+            <string>NunitoSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TargetView" customModule="Evexia_Production" customModuleProvider="target">
+            <connections>
+                <outlet property="countLabel" destination="5yN-pc-ckE" id="0JK-82-Wfc"/>
+                <outlet property="dashPatternView" destination="vg9-2k-LvU" id="MgY-3u-3Jk"/>
+                <outlet property="view" destination="iN0-l3-epB" id="pPi-Jg-PyB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="86" height="148"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vg9-2k-LvU">
+                    <rect key="frame" x="1" y="1" width="84" height="146"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5yN-pc-ckE">
+                            <rect key="frame" x="35" y="58" width="14.5" height="30.5"/>
+                            <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="26"/>
+                            <color key="textColor" name="gray400"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="5yN-pc-ckE" firstAttribute="centerY" secondItem="vg9-2k-LvU" secondAttribute="centerY" id="4KX-gk-Ox7"/>
+                        <constraint firstItem="5yN-pc-ckE" firstAttribute="centerX" secondItem="vg9-2k-LvU" secondAttribute="centerX" id="Xvm-wt-tM5"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vg9-2k-LvU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="1" id="45E-rU-h0t"/>
+                <constraint firstAttribute="trailing" secondItem="vg9-2k-LvU" secondAttribute="trailing" constant="1" id="A70-fc-bih"/>
+                <constraint firstItem="vg9-2k-LvU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="1" id="e3Z-kQ-fEy"/>
+                <constraint firstAttribute="bottom" secondItem="vg9-2k-LvU" secondAttribute="bottom" constant="1" id="thn-Hv-lhC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-384.05797101449281" y="-273.88392857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="gray400">
+            <color red="0.79607843137254897" green="0.83529411764705885" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

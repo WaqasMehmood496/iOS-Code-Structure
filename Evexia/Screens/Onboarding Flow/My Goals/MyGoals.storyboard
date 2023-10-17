@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+        <array key="NunitoSans-Regular.ttf">
+            <string>NunitoSans-Regular</string>
+        </array>
+        <array key="NunitoSans-SemiBold.ttf">
+            <string>NunitoSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--My GoalsVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="MyGoalsVC" id="Y6W-OH-hqX" customClass="MyGoalsVC" customModule="Evexia_Production" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pt4-C2-3WW">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="UVa-Gk-bW1">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="ki5-Qg-Zzl">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="683"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="91B-Hs-prm">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="189"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vMu-kp-yJv" customClass="HintView" customModule="Evexia_Production" customModuleProvider="target">
+                                                                <rect key="frame" x="16" y="12" width="382" height="98"/>
+                                                                <color key="backgroundColor" name="eatNew"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="98" id="3Cm-OD-xx3"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="F5y-EX-8ig">
+                                                                <rect key="frame" x="16" y="134" width="382" height="55"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What works for you?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="koc-Ug-wXJ">
+                                                                        <rect key="frame" x="29" y="0.0" width="324" height="25"/>
+                                                                        <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="18"/>
+                                                                        <color key="textColor" name="gray900"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Be more active with loved ones" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqW-do-yuF">
+                                                                        <rect key="frame" x="29" y="33" width="324" height="22"/>
+                                                                        <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="16"/>
+                                                                        <color key="textColor" name="gray700"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <edgeInsets key="layoutMargins" top="0.0" left="29" bottom="0.0" right="29"/>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <edgeInsets key="layoutMargins" top="12" left="16" bottom="0.0" right="16"/>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="y4d-9t-i1H">
+                                                        <rect key="frame" x="0.0" y="207" width="414" height="476"/>
+                                                        <subviews>
+                                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CfA-SP-iWu" customClass="IntrinsicTableView" customModule="Evexia_Production" customModuleProvider="target">
+                                                                <rect key="frame" x="10" y="0.0" width="394" height="460"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </tableView>
+                                                        </subviews>
+                                                        <edgeInsets key="layoutMargins" top="0.0" left="10" bottom="16" right="10"/>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ztI-e2-jTl">
+                                                <rect key="frame" x="0.0" y="738" width="414" height="64"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7H5-u2-wUR">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="feH-dp-DvZ" customClass="RequestButton" customModule="Evexia_Production" customModuleProvider="target">
+                                                                <rect key="frame" x="16" y="0.0" width="382" height="64"/>
+                                                                <color key="backgroundColor" name="orange"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="64" id="Ew1-Dz-41O"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="NunitoSans-SemiBold" family="Nunito Sans" pointSize="20"/>
+                                                                <state key="normal" title="Next - set your availability">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="16"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="setMyGoals:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="MZU-Si-zH8"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="feH-dp-DvZ" firstAttribute="leading" secondItem="7H5-u2-wUR" secondAttribute="leading" constant="16" id="2Ar-iq-5n8"/>
+                                                            <constraint firstItem="feH-dp-DvZ" firstAttribute="top" secondItem="7H5-u2-wUR" secondAttribute="top" id="CSN-f1-eBp"/>
+                                                            <constraint firstAttribute="trailing" secondItem="feH-dp-DvZ" secondAttribute="trailing" constant="16" id="mVj-yY-QdB"/>
+                                                            <constraint firstAttribute="bottom" secondItem="feH-dp-DvZ" secondAttribute="bottom" id="mnv-gB-evX"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="7H5-u2-wUR" secondAttribute="trailing" id="eWJ-0Y-Mcx"/>
+                                                    <constraint firstItem="7H5-u2-wUR" firstAttribute="leading" secondItem="ztI-e2-jTl" secondAttribute="leading" id="gdj-cf-fD9"/>
+                                                    <constraint firstItem="7H5-u2-wUR" firstAttribute="top" secondItem="ztI-e2-jTl" secondAttribute="top" id="xh2-bj-gUU"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="16" right="0.0"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="gray100"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="UVa-Gk-bW1" secondAttribute="bottom" id="5Du-FD-Ju3"/>
+                                    <constraint firstItem="UVa-Gk-bW1" firstAttribute="height" relation="greaterThanOrEqual" secondItem="Pt4-C2-3WW" secondAttribute="height" id="Ony-xq-4gO"/>
+                                    <constraint firstItem="UVa-Gk-bW1" firstAttribute="leading" secondItem="Pt4-C2-3WW" secondAttribute="leading" id="YQy-JB-DDk"/>
+                                    <constraint firstItem="UVa-Gk-bW1" firstAttribute="top" secondItem="Pt4-C2-3WW" secondAttribute="top" id="q4J-D6-SBY"/>
+                                    <constraint firstAttribute="trailing" secondItem="UVa-Gk-bW1" secondAttribute="trailing" id="rfX-pm-t7y"/>
+                                    <constraint firstItem="UVa-Gk-bW1" firstAttribute="width" secondItem="Pt4-C2-3WW" secondAttribute="width" id="yzs-LR-kvx"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="top" secondItem="Pt4-C2-3WW" secondAttribute="top" id="Wct-nf-RnC"/>
+                            <constraint firstItem="Pt4-C2-3WW" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="acb-9d-2Mh"/>
+                            <constraint firstAttribute="bottom" secondItem="Pt4-C2-3WW" secondAttribute="bottom" id="rtW-rM-74l"/>
+                            <constraint firstItem="Pt4-C2-3WW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="smL-2r-tbO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="tqW-do-yuF" id="SRW-P5-p2z"/>
+                        <outlet property="hintView" destination="vMu-kp-yJv" id="aBG-iL-D27"/>
+                        <outlet property="myGoalsTableView" destination="CfA-SP-iWu" id="p3c-su-DNf"/>
+                        <outlet property="scrollView" destination="Pt4-C2-3WW" id="ngv-GE-7aO"/>
+                        <outlet property="setGoalsButton" destination="feH-dp-DvZ" id="r1s-Jb-FvK"/>
+                        <outlet property="titleLabel" destination="koc-Ug-wXJ" id="ecU-by-UJn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23" y="74"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="eatNew">
+            <color red="0.11764705882352941" green="0.32156862745098042" blue="0.52549019607843139" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray100">
+            <color red="0.96899998188018799" green="0.98000001907348633" blue="0.98799997568130493" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray700">
+            <color red="0.28999999165534973" green="0.33300000429153442" blue="0.40799999237060547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray900">
+            <color red="0.10196078431372549" green="0.12156862745098039" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="orange">
+            <color red="0.89803921568627454" green="0.57647058823529407" blue="0.20784313725490197" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

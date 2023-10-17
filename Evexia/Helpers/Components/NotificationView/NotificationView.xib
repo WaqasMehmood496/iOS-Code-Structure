@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Outfit-Bold.ttf">
+            <string>Outfit-Bold</string>
+        </array>
+        <array key="Outfit-Regular.ttf">
+            <string>Outfit-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NotificationView" customModule="Evexia_Production" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="qYU-CB-uc6" id="N25-cI-zOi"/>
+                <outlet property="buttonsStackView" destination="i1l-9n-mxh" id="vHE-tL-wXc"/>
+                <outlet property="contentView" destination="INv-i5-IIc" id="L2e-yU-vbe"/>
+                <outlet property="descriptionLabel" destination="9YU-4C-Qvu" id="POV-2V-7LG"/>
+                <outlet property="gradientView" destination="aVA-Yi-G9a" id="K5r-p4-ITv"/>
+                <outlet property="resendButton" destination="krq-sA-HJf" id="z6s-Sp-vs2"/>
+                <outlet property="titleLabel" destination="z0a-Va-Z7p" id="nZ1-8x-mu7"/>
+                <outlet property="view" destination="iN0-l3-epB" id="vTK-Me-Vtw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="450" height="404"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="INv-i5-IIc">
+                    <rect key="frame" x="0.0" y="36" width="450" height="368"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="iIH-4o-unO">
+                            <rect key="frame" x="0.0" y="0.0" width="450" height="368"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="XvZ-qE-P3J">
+                                    <rect key="frame" x="16" y="72" width="418" height="162"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sqJ-Qq-Y21">
+                                            <rect key="frame" x="0.0" y="21.5" width="418" height="119"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activation mail has been sent to “jacob.jones@gmail.com”" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z0a-Va-Z7p">
+                                                    <rect key="frame" x="61.5" y="0.0" width="295" height="50.5"/>
+                                                    <fontDescription key="fontDescription" name="Outfit-Bold" family="Outfit" pointSize="20"/>
+                                                    <color key="textColor" name="blue84"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9YU-4C-Qvu">
+                                                    <rect key="frame" x="7.5" y="58.5" width="403.5" height="60.5"/>
+                                                    <string key="text">Please check your inbox and click on the activation link to complete registration process. If you don’t get an email within a few minutes, please re-try.</string>
+                                                    <fontDescription key="fontDescription" name="Outfit-Regular" family="Outfit" pointSize="16"/>
+                                                    <color key="textColor" name="blue84"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="i1l-9n-mxh">
+                                    <rect key="frame" x="16" y="250" width="418" height="52"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYU-CB-uc6">
+                                            <rect key="frame" x="0.0" y="0.0" width="172.5" height="52"/>
+                                            <fontDescription key="fontDescription" name="Outfit-Bold" family="Outfit" pointSize="20"/>
+                                            <state key="normal" title="Back">
+                                                <color key="titleColor" name="blue84"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="backButtonDidTap:" destination="-1" eventType="touchUpInside" id="iqt-DX-wts"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krq-sA-HJf" customClass="RequestButton" customModule="Evexia_Production" customModuleProvider="target">
+                                            <rect key="frame" x="188.5" y="0.0" width="229.5" height="52"/>
+                                            <color key="backgroundColor" name="blue"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="52" id="7VO-0Q-SO8"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Outfit-Bold" family="Outfit" pointSize="20"/>
+                                            <state key="normal" title="Retry">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="actionButtonDidTap:" destination="-1" eventType="touchUpInside" id="PNv-iV-1Ju"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="qYU-CB-uc6" firstAttribute="width" secondItem="krq-sA-HJf" secondAttribute="width" multiplier="0.75" id="3HP-Gh-cEF"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                            <edgeInsets key="layoutMargins" top="60" left="16" bottom="32" right="16"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="iIH-4o-unO" secondAttribute="bottom" id="ikx-UX-B8v"/>
+                        <constraint firstItem="iIH-4o-unO" firstAttribute="leading" secondItem="INv-i5-IIc" secondAttribute="leading" id="jFf-IA-I0i"/>
+                        <constraint firstAttribute="trailing" secondItem="iIH-4o-unO" secondAttribute="trailing" id="kfm-Lq-dCy"/>
+                        <constraint firstItem="iIH-4o-unO" firstAttribute="top" secondItem="INv-i5-IIc" secondAttribute="top" id="r77-3b-Wk4"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aVA-Yi-G9a" customClass="GradientView" customModule="Evexia_Production" customModuleProvider="target">
+                    <rect key="frame" x="189" y="0.0" width="72" height="72"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="letter" translatesAutoresizingMaskIntoConstraints="NO" id="h1d-bp-2Pn">
+                            <rect key="frame" x="16" y="16" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="ETb-zD-Bh0"/>
+                                <constraint firstAttribute="height" constant="40" id="LOE-nQ-RzW"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="yjW-LZ-jNV"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="72" id="0Ot-0V-DWd"/>
+                        <constraint firstItem="h1d-bp-2Pn" firstAttribute="centerY" secondItem="aVA-Yi-G9a" secondAttribute="centerY" id="9Gi-hi-9Ga"/>
+                        <constraint firstAttribute="height" constant="72" id="Ccx-dm-0v4"/>
+                        <constraint firstItem="h1d-bp-2Pn" firstAttribute="centerX" secondItem="aVA-Yi-G9a" secondAttribute="centerX" id="XHD-EO-7F1"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="INv-i5-IIc" secondAttribute="bottom" id="AVn-T5-SsA"/>
+                <constraint firstItem="INv-i5-IIc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="36" id="OC3-Gc-BjA"/>
+                <constraint firstItem="INv-i5-IIc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="YSW-uW-aXA"/>
+                <constraint firstItem="aVA-Yi-G9a" firstAttribute="centerY" secondItem="INv-i5-IIc" secondAttribute="top" id="aG1-El-ufw"/>
+                <constraint firstItem="aVA-Yi-G9a" firstAttribute="centerX" secondItem="INv-i5-IIc" secondAttribute="centerX" id="e4W-Uf-Tgb"/>
+                <constraint firstAttribute="trailing" secondItem="INv-i5-IIc" secondAttribute="trailing" id="vMv-PB-qiJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="1.4492753623188408" y="-62.276785714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="letter" width="45.5" height="38.5"/>
+        <namedColor name="blue">
+            <color red="0.23529411764705882" green="0.37647058823529411" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="blue84">
+            <color red="0.070588235294117646" green="0.16862745098039217" blue="0.51764705882352946" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

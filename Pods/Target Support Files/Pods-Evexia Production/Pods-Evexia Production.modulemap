@@ -1,0 +1,6 @@
+framework module Pods_Evexia_Production {
+  umbrella header "Pods-Evexia Production-umbrella.h"
+
+  export *
+  module * { export * }
+}

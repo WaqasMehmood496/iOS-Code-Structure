@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+        <array key="NunitoSans-Regular.ttf">
+            <string>NunitoSans-Regular</string>
+        </array>
+        <array key="NunitoSans-SemiBold.ttf">
+            <string>NunitoSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Personal PlanVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="PersonalPlanVC" id="Y6W-OH-hqX" customClass="PersonalPlanVC" customModule="Evexia_Production" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="jIv-Bq-RoH">
+                                <rect key="frame" x="0.0" y="24" width="375" height="643"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="z0h-d9-VUa">
+                                        <rect key="frame" x="10" y="24" width="355" height="492.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="TUg-gi-8hk">
+                                                <rect key="frame" x="0.0" y="0.0" width="355" height="97.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="mFJ-m3-0fa">
+                                                        <rect key="frame" x="0.0" y="0.0" width="355" height="97.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74W-LR-0Ax">
+                                                                <rect key="frame" x="39.5" y="0.0" width="276.5" height="49.5"/>
+                                                                <string key="text">What do you think
+needs the most focus in your life?</string>
+                                                                <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="18"/>
+                                                                <color key="textColor" name="gray900"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select and then drag to the boxes below in the order that is most relevant to you" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8R5-B8-3wA">
+                                                                <rect key="frame" x="9.5" y="53.5" width="336" height="44"/>
+                                                                <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="16"/>
+                                                                <color key="textColor" name="gray700"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Du-80-Eme">
+                                                <rect key="frame" x="0.0" y="117.5" width="355" height="375"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UFR-Li-KSs" customClass="TargetView" customModule="Evexia_Production" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="179" width="85" height="150"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iuI-Bq-MpV" customClass="TargetView" customModule="Evexia_Production" customModuleProvider="target">
+                                                        <rect key="frame" x="90" y="179" width="85" height="150"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dBA-VN-0L7" customClass="TargetView" customModule="Evexia_Production" customModuleProvider="target">
+                                                        <rect key="frame" x="180" y="179" width="85" height="150"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q6U-hE-0FW" customClass="TargetView" customModule="Evexia_Production" customModuleProvider="target">
+                                                        <rect key="frame" x="270" y="179" width="85" height="150"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LQg-Bc-Vaq" customClass="FocusBackgroundView" customModule="Evexia_Production" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="10" width="85" height="150"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ehs-rX-MMM" customClass="FocusBackgroundView" customModule="Evexia_Production" customModuleProvider="target">
+                                                        <rect key="frame" x="90" y="10" width="85" height="150"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b5Y-aO-lkH" customClass="FocusBackgroundView" customModule="Evexia_Production" customModuleProvider="target">
+                                                        <rect key="frame" x="180" y="10" width="85" height="150"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2zl-Mw-Cwk" customClass="FocusBackgroundView" customModule="Evexia_Production" customModuleProvider="target">
+                                                        <rect key="frame" x="270" y="10" width="85" height="150"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" name="gray100"/>
+                                                <constraints>
+                                                    <constraint firstItem="LQg-Bc-Vaq" firstAttribute="leading" secondItem="8Du-80-Eme" secondAttribute="leading" id="08U-Bw-y1W"/>
+                                                    <constraint firstItem="b5Y-aO-lkH" firstAttribute="bottom" secondItem="ehs-rX-MMM" secondAttribute="bottom" id="0fo-o7-6f9"/>
+                                                    <constraint firstItem="dBA-VN-0L7" firstAttribute="height" secondItem="2zl-Mw-Cwk" secondAttribute="height" id="1En-SY-l3b"/>
+                                                    <constraint firstItem="ehs-rX-MMM" firstAttribute="leading" secondItem="LQg-Bc-Vaq" secondAttribute="trailing" constant="5" id="3OF-fp-gq0"/>
+                                                    <constraint firstAttribute="bottom" secondItem="dBA-VN-0L7" secondAttribute="bottom" constant="46" id="4Hb-IF-SKm"/>
+                                                    <constraint firstItem="iuI-Bq-MpV" firstAttribute="height" secondItem="2zl-Mw-Cwk" secondAttribute="height" id="8GP-GN-PBy"/>
+                                                    <constraint firstItem="iuI-Bq-MpV" firstAttribute="width" secondItem="UFR-Li-KSs" secondAttribute="width" id="8J8-hm-OPr"/>
+                                                    <constraint firstItem="b5Y-aO-lkH" firstAttribute="bottom" secondItem="LQg-Bc-Vaq" secondAttribute="bottom" id="8im-5w-cHz"/>
+                                                    <constraint firstItem="UFR-Li-KSs" firstAttribute="width" secondItem="2zl-Mw-Cwk" secondAttribute="width" id="9XS-mR-9bn"/>
+                                                    <constraint firstItem="b5Y-aO-lkH" firstAttribute="top" secondItem="2zl-Mw-Cwk" secondAttribute="top" id="DLa-qZ-KZR"/>
+                                                    <constraint firstItem="ehs-rX-MMM" firstAttribute="leading" secondItem="iuI-Bq-MpV" secondAttribute="leading" id="GTP-8C-1Gp"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Q6U-hE-0FW" secondAttribute="bottom" constant="46" id="GiE-4r-aWn"/>
+                                                    <constraint firstItem="UFR-Li-KSs" firstAttribute="height" secondItem="2zl-Mw-Cwk" secondAttribute="height" id="HV5-A6-osm"/>
+                                                    <constraint firstItem="UFR-Li-KSs" firstAttribute="leading" secondItem="8Du-80-Eme" secondAttribute="leading" id="I7I-eW-XS7"/>
+                                                    <constraint firstItem="Q6U-hE-0FW" firstAttribute="width" secondItem="dBA-VN-0L7" secondAttribute="width" id="IRL-1K-ysn"/>
+                                                    <constraint firstItem="dBA-VN-0L7" firstAttribute="width" secondItem="iuI-Bq-MpV" secondAttribute="width" id="MIC-M9-sLm"/>
+                                                    <constraint firstItem="iuI-Bq-MpV" firstAttribute="leading" secondItem="UFR-Li-KSs" secondAttribute="trailing" constant="5" id="Mae-K9-hcL"/>
+                                                    <constraint firstItem="b5Y-aO-lkH" firstAttribute="top" secondItem="ehs-rX-MMM" secondAttribute="top" id="N3m-uN-nBV"/>
+                                                    <constraint firstAttribute="bottom" secondItem="iuI-Bq-MpV" secondAttribute="bottom" constant="46" id="P4K-mY-vYp"/>
+                                                    <constraint firstItem="Q6U-hE-0FW" firstAttribute="leading" secondItem="dBA-VN-0L7" secondAttribute="trailing" constant="5" id="PdQ-sf-spt"/>
+                                                    <constraint firstItem="b5Y-aO-lkH" firstAttribute="bottom" secondItem="2zl-Mw-Cwk" secondAttribute="bottom" id="QpV-a7-j8T"/>
+                                                    <constraint firstItem="b5Y-aO-lkH" firstAttribute="trailing" secondItem="dBA-VN-0L7" secondAttribute="trailing" id="UCQ-iR-ZAU"/>
+                                                    <constraint firstItem="Q6U-hE-0FW" firstAttribute="width" secondItem="2zl-Mw-Cwk" secondAttribute="width" id="VaV-GZ-tUS"/>
+                                                    <constraint firstItem="2zl-Mw-Cwk" firstAttribute="trailing" secondItem="Q6U-hE-0FW" secondAttribute="trailing" id="Z8B-yK-W7C"/>
+                                                    <constraint firstItem="b5Y-aO-lkH" firstAttribute="leading" secondItem="ehs-rX-MMM" secondAttribute="trailing" constant="5" id="Ztb-uF-24b"/>
+                                                    <constraint firstAttribute="bottom" secondItem="UFR-Li-KSs" secondAttribute="bottom" constant="46" id="aJu-DB-aGr"/>
+                                                    <constraint firstItem="b5Y-aO-lkH" firstAttribute="leading" secondItem="dBA-VN-0L7" secondAttribute="leading" id="bUd-S9-wvB"/>
+                                                    <constraint firstItem="Q6U-hE-0FW" firstAttribute="height" secondItem="2zl-Mw-Cwk" secondAttribute="height" id="fLG-oD-aa0"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Q6U-hE-0FW" secondAttribute="trailing" id="gjP-NX-HO9"/>
+                                                    <constraint firstItem="dBA-VN-0L7" firstAttribute="width" secondItem="2zl-Mw-Cwk" secondAttribute="width" id="hTR-e8-5Ud"/>
+                                                    <constraint firstItem="iuI-Bq-MpV" firstAttribute="width" secondItem="2zl-Mw-Cwk" secondAttribute="width" id="hto-pk-hjA"/>
+                                                    <constraint firstItem="b5Y-aO-lkH" firstAttribute="top" secondItem="8Du-80-Eme" secondAttribute="top" constant="10" id="hx5-Iz-XFE"/>
+                                                    <constraint firstItem="b5Y-aO-lkH" firstAttribute="leading" secondItem="ehs-rX-MMM" secondAttribute="trailing" constant="5" id="kSn-i9-ZEj"/>
+                                                    <constraint firstItem="dBA-VN-0L7" firstAttribute="top" secondItem="b5Y-aO-lkH" secondAttribute="bottom" constant="19" id="kiU-zG-Xyc"/>
+                                                    <constraint firstItem="2zl-Mw-Cwk" firstAttribute="leading" secondItem="b5Y-aO-lkH" secondAttribute="trailing" constant="5" id="lfN-Oa-8pX"/>
+                                                    <constraint firstItem="2zl-Mw-Cwk" firstAttribute="height" secondItem="8Du-80-Eme" secondAttribute="height" multiplier="0.4" id="nCw-ck-MgP"/>
+                                                    <constraint firstItem="dBA-VN-0L7" firstAttribute="leading" secondItem="iuI-Bq-MpV" secondAttribute="trailing" constant="5" id="r6R-kw-dkz"/>
+                                                    <constraint firstItem="b5Y-aO-lkH" firstAttribute="top" secondItem="LQg-Bc-Vaq" secondAttribute="top" id="rxJ-FJ-QTo"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="8Du-80-Eme" firstAttribute="width" secondItem="TUg-gi-8hk" secondAttribute="width" id="Gm7-iZ-Wwc"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="miO-rp-zae">
+                                        <rect key="frame" x="10" y="563" width="355" height="64"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRL-7y-KwP" customClass="RequestButton" customModule="Evexia_Production" customModuleProvider="target">
+                                                <rect key="frame" x="6" y="0.0" width="343" height="64"/>
+                                                <color key="backgroundColor" name="orange"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="64" id="2sQ-2C-zw4"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="NunitoSans-SemiBold" family="Nunito Sans" pointSize="20"/>
+                                                <state key="normal" title="Build your personal plan">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buildPlanButtonDidTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="eSh-7u-tf9"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <edgeInsets key="layoutMargins" top="0.0" left="6" bottom="0.0" right="6"/>
+                                    </stackView>
+                                </subviews>
+                                <edgeInsets key="layoutMargins" top="24" left="10" bottom="16" right="10"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="gray100"/>
+                        <constraints>
+                            <constraint firstItem="jIv-Bq-RoH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="90E-XO-zCh"/>
+                            <constraint firstItem="jIv-Bq-RoH" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="24" id="WoG-vm-PZj"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="jIv-Bq-RoH" secondAttribute="trailing" id="Xsl-9D-rDI"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="jIv-Bq-RoH" secondAttribute="bottom" id="k0C-cB-acY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buildPlanButton" destination="iRL-7y-KwP" id="5eP-dl-ogv"/>
+                        <outlet property="container" destination="8Du-80-Eme" id="S12-f4-MBT"/>
+                        <outlet property="descriptionLabel" destination="8R5-B8-3wA" id="tzZ-6Y-U1B"/>
+                        <outlet property="titleLabel" destination="74W-LR-0Ax" id="bFu-C2-Cto"/>
+                        <outletCollection property="targetViews" destination="UFR-Li-KSs" collectionClass="NSMutableArray" id="Dgb-xg-d7r"/>
+                        <outletCollection property="targetViews" destination="iuI-Bq-MpV" collectionClass="NSMutableArray" id="EQ2-SB-PEe"/>
+                        <outletCollection property="targetViews" destination="dBA-VN-0L7" collectionClass="NSMutableArray" id="fso-ge-zBj"/>
+                        <outletCollection property="targetViews" destination="Q6U-hE-0FW" collectionClass="NSMutableArray" id="OwT-09-v4K"/>
+                        <outletCollection property="backgroundViews" destination="LQg-Bc-Vaq" collectionClass="NSMutableArray" id="nTF-pz-YKM"/>
+                        <outletCollection property="backgroundViews" destination="ehs-rX-MMM" collectionClass="NSMutableArray" id="iE9-23-gNw"/>
+                        <outletCollection property="backgroundViews" destination="b5Y-aO-lkH" collectionClass="NSMutableArray" id="2eF-Jv-eAC"/>
+                        <outletCollection property="backgroundViews" destination="2zl-Mw-Cwk" collectionClass="NSMutableArray" id="BnE-8L-4Ys"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-20.289855072463769" y="42.857142857142854"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="gray100">
+            <color red="0.96899998188018799" green="0.98000001907348633" blue="0.98799997568130493" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray700">
+            <color red="0.28999999165534973" green="0.33300000429153442" blue="0.40799999237060547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray900">
+            <color red="0.10196078431372549" green="0.12156862745098039" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="orange">
+            <color red="0.89803921568627454" green="0.57647058823529407" blue="0.20784313725490197" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

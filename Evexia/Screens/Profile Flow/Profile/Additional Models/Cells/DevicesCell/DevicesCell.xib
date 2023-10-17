@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+        <array key="NunitoSans-Regular.ttf">
+            <string>NunitoSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DevicesCell" rowHeight="139" id="KGk-i7-Jjw" customClass="DevicesCell" customModule="Evexia_Production" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="366" height="139"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="366" height="139"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="epZ-Rw-4iP">
+                        <rect key="frame" x="0.0" y="0.0" width="366" height="139"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Tt-cP-cCf">
+                                <rect key="frame" x="8" y="8" width="350" height="123"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="jya-q8-YpZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="123"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3fW-vd-eon">
+                                                <rect key="frame" x="16" y="16" width="318" height="91"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My synced devices" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4y-ZI-Zt0">
+                                                        <rect key="frame" x="0.0" y="0.0" width="318" height="27.5"/>
+                                                        <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="20"/>
+                                                        <color key="textColor" name="gray900"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kE1-bu-2M2">
+                                                        <rect key="frame" x="0.0" y="35.5" width="318" height="55.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="U32-mN-iru">
+                                                                <rect key="frame" x="0.0" y="3.5" width="269" height="49"/>
+                                                                <subviews>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appleHealth" translatesAutoresizingMaskIntoConstraints="NO" id="eZj-BY-Yc5">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="49" height="49"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="49" id="Qd1-nW-XTY"/>
+                                                                            <constraint firstAttribute="height" constant="49" id="kFI-RJ-7g4"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apple Health" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IcL-uO-jjh">
+                                                                        <rect key="frame" x="61" y="0.0" width="208" height="49"/>
+                                                                        <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="16"/>
+                                                                        <color key="textColor" name="gray900"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5h1-5G-iwt">
+                                                                <rect key="frame" x="269" y="12.5" width="51" height="31"/>
+                                                                <color key="onTintColor" name="orange"/>
+                                                            </switch>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <edgeInsets key="layoutMargins" top="16" left="16" bottom="16" right="16"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="jya-q8-YpZ" firstAttribute="top" secondItem="1Tt-cP-cCf" secondAttribute="top" id="5sJ-zP-kUs"/>
+                                    <constraint firstItem="jya-q8-YpZ" firstAttribute="leading" secondItem="1Tt-cP-cCf" secondAttribute="leading" id="GdT-vD-PUK"/>
+                                    <constraint firstAttribute="trailing" secondItem="jya-q8-YpZ" secondAttribute="trailing" id="IfH-Zz-v8Y"/>
+                                    <constraint firstAttribute="bottom" secondItem="jya-q8-YpZ" secondAttribute="bottom" id="w8t-hM-ZaE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="epZ-Rw-4iP" secondAttribute="trailing" id="YzE-1O-DzY"/>
+                    <constraint firstItem="epZ-Rw-4iP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="gAU-dp-3hm"/>
+                    <constraint firstAttribute="bottom" secondItem="epZ-Rw-4iP" secondAttribute="bottom" id="ieZ-Tn-sti"/>
+                    <constraint firstItem="epZ-Rw-4iP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="lUb-aM-gVM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="deviceImageView" destination="eZj-BY-Yc5" id="wiH-HY-Viw"/>
+                <outlet property="deviceName" destination="IcL-uO-jjh" id="OnP-0v-FU7"/>
+                <outlet property="deviceSwitch" destination="5h1-5G-iwt" id="CMn-wX-CKF"/>
+                <outlet property="shadowView" destination="1Tt-cP-cCf" id="v5a-s4-NDW"/>
+                <outlet property="titleLabel" destination="b4y-ZI-Zt0" id="gR9-65-IvT"/>
+            </connections>
+            <point key="canvasLocation" x="-76.811594202898561" y="142.29910714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="appleHealth" width="73.5" height="73.5"/>
+        <namedColor name="gray900">
+            <color red="0.10196078431372549" green="0.12156862745098039" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="orange">
+            <color red="0.89803921568627454" green="0.57647058823529407" blue="0.20784313725490197" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

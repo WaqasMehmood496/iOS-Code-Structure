@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+        <array key="NunitoSans-SemiBold.ttf">
+            <string>NunitoSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Personal DevelopmentVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="PersonalDevelopmentVC" id="Y6W-OH-hqX" customClass="PersonalDevelopmentVC" customModule="Evexia_Production" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="rpz-uc-2sX">
+                                <rect key="frame" x="15" y="0.0" width="345" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" name="gray300"/>
+                                <inset key="separatorInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                            </tableView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_community_noConnect" translatesAutoresizingMaskIntoConstraints="NO" id="B28-Nl-gtg">
+                                <rect key="frame" x="50" y="196" width="275" height="275"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="B28-Nl-gtg" secondAttribute="height" multiplier="1:1" id="flN-1h-tnn"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hsX-lE-plf">
+                                <rect key="frame" x="44.5" y="246" width="286.5" height="175"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Whoops!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w0X-w7-kQN">
+                                        <rect key="frame" x="0.0" y="110" width="286.5" height="33"/>
+                                        <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="24"/>
+                                        <color key="textColor" name="gray850"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There is no material at this category yet" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxm-gJ-P9r">
+                                        <rect key="frame" x="0.0" y="153" width="286.5" height="22"/>
+                                        <fontDescription key="fontDescription" name="NunitoSans-SemiBold" family="Nunito Sans" pointSize="16"/>
+                                        <color key="textColor" name="gray700"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pdPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="yjz-cS-f9l">
+                                        <rect key="frame" x="103" y="0.0" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="BRf-I9-bfw"/>
+                                            <constraint firstAttribute="height" constant="80" id="NIS-dz-oPF"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="yjz-cS-f9l" firstAttribute="top" secondItem="hsX-lE-plf" secondAttribute="top" id="Cjp-qr-Uuz"/>
+                                    <constraint firstItem="rxm-gJ-P9r" firstAttribute="top" secondItem="w0X-w7-kQN" secondAttribute="bottom" constant="10" id="KQL-Iy-XNe"/>
+                                    <constraint firstAttribute="trailing" secondItem="w0X-w7-kQN" secondAttribute="trailing" id="TO0-m2-UUj"/>
+                                    <constraint firstItem="rxm-gJ-P9r" firstAttribute="leading" secondItem="hsX-lE-plf" secondAttribute="leading" id="XuQ-FT-aoO"/>
+                                    <constraint firstItem="w0X-w7-kQN" firstAttribute="leading" secondItem="hsX-lE-plf" secondAttribute="leading" id="a5A-fc-OKE"/>
+                                    <constraint firstAttribute="bottom" secondItem="rxm-gJ-P9r" secondAttribute="bottom" id="bkq-Mx-Okq"/>
+                                    <constraint firstItem="w0X-w7-kQN" firstAttribute="top" secondItem="yjz-cS-f9l" secondAttribute="bottom" constant="30" id="hdO-35-MFW"/>
+                                    <constraint firstItem="yjz-cS-f9l" firstAttribute="centerX" secondItem="hsX-lE-plf" secondAttribute="centerX" id="syf-bi-Od2"/>
+                                    <constraint firstAttribute="trailing" secondItem="rxm-gJ-P9r" secondAttribute="trailing" id="tuT-c2-Y8G"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="gray100"/>
+                        <constraints>
+                            <constraint firstItem="B28-Nl-gtg" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="50" id="9bb-m8-pxb"/>
+                            <constraint firstItem="hsX-lE-plf" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="HOH-y1-CHK"/>
+                            <constraint firstItem="hsX-lE-plf" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="Nec-0u-Fya"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="rpz-uc-2sX" secondAttribute="bottom" id="Q03-kJ-lKe"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="B28-Nl-gtg" secondAttribute="trailing" constant="50" id="Qed-Yp-Fdi"/>
+                            <constraint firstItem="B28-Nl-gtg" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="RJN-U1-KsH"/>
+                            <constraint firstItem="rpz-uc-2sX" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="hz8-Ef-Z6a"/>
+                            <constraint firstItem="B28-Nl-gtg" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="luv-aK-SrE"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="rpz-uc-2sX" secondAttribute="trailing" constant="15" id="tpD-1w-Gtt"/>
+                            <constraint firstItem="rpz-uc-2sX" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="wuA-kZ-pFi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emptyDataView" destination="hsX-lE-plf" id="BvM-T7-lqJ"/>
+                        <outlet property="noConnectionImage" destination="B28-Nl-gtg" id="7ik-h6-Xs2"/>
+                        <outlet property="tableView" destination="rpz-uc-2sX" id="GRO-Pk-Gjc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="80"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image_community_noConnect" width="514" height="514"/>
+        <image name="pdPlaceholder" width="80" height="80"/>
+        <namedColor name="gray100">
+            <color red="0.96899998188018799" green="0.98000001907348633" blue="0.98799997568130493" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray300">
+            <color red="0.88599997758865356" green="0.9100000262260437" blue="0.94099998474121094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray700">
+            <color red="0.28999999165534973" green="0.33300000429153442" blue="0.40799999237060547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray850">
+            <color red="0.12156862745098039" green="0.14509803921568629" blue="0.19215686274509805" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

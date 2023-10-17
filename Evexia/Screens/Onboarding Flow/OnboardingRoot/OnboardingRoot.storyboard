@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding RootVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingRootVC" id="Y6W-OH-hqX" customClass="OnboardingRootVC" customModule="Evexia_Production" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tak-e2-EVa" customClass="SectionedProgressView" customModule="Evexia_Production" customModuleProvider="target">
+                                <rect key="frame" x="16" y="56" width="382" height="4"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="4" id="pqq-B9-VKr"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRt-BU-Uxs">
+                                <rect key="frame" x="0.0" y="72" width="414" height="824"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="skg-Lv-DFr">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="824"/>
+                                        <subviews>
+                                            <containerView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWw-Ej-iiN">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="824"/>
+                                                <color key="backgroundColor" name="gray200"/>
+                                            </containerView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="gray100"/>
+                                <constraints>
+                                    <constraint firstItem="skg-Lv-DFr" firstAttribute="width" secondItem="rRt-BU-Uxs" secondAttribute="width" id="NVa-7a-yQi"/>
+                                    <constraint firstItem="skg-Lv-DFr" firstAttribute="height" secondItem="rRt-BU-Uxs" secondAttribute="height" id="QEB-kw-ISR"/>
+                                    <constraint firstItem="skg-Lv-DFr" firstAttribute="leading" secondItem="rRt-BU-Uxs" secondAttribute="leading" id="dWd-ti-vVm"/>
+                                    <constraint firstAttribute="trailing" secondItem="skg-Lv-DFr" secondAttribute="trailing" id="efK-7z-GUY"/>
+                                    <constraint firstItem="skg-Lv-DFr" firstAttribute="top" secondItem="rRt-BU-Uxs" secondAttribute="top" id="fah-lu-l5z"/>
+                                    <constraint firstAttribute="bottom" secondItem="skg-Lv-DFr" secondAttribute="bottom" id="pOc-at-LaX"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="gray100"/>
+                        <constraints>
+                            <constraint firstItem="Tak-e2-EVa" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="12" id="16N-eJ-2mn"/>
+                            <constraint firstAttribute="bottom" secondItem="rRt-BU-Uxs" secondAttribute="bottom" id="9Pa-hC-qyr"/>
+                            <constraint firstItem="rRt-BU-Uxs" firstAttribute="top" secondItem="Tak-e2-EVa" secondAttribute="bottom" constant="12" id="PpA-WW-TvD"/>
+                            <constraint firstItem="rRt-BU-Uxs" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="lkh-6W-bil"/>
+                            <constraint firstItem="Tak-e2-EVa" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="nbi-oa-EJk"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Tak-e2-EVa" secondAttribute="trailing" constant="16" id="noP-tI-2Jm"/>
+                            <constraint firstAttribute="trailing" secondItem="rRt-BU-Uxs" secondAttribute="trailing" id="rTF-KD-ZAp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="dWw-Ej-iiN" id="03x-uU-Dcz"/>
+                        <outlet property="onboardingProgress" destination="Tak-e2-EVa" id="DjW-b1-1RN"/>
+                        <outlet property="scrollView" destination="rRt-BU-Uxs" id="Veo-ND-zoO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13.043478260869566" y="64.955357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="gray100">
+            <color red="0.96899998188018799" green="0.98000001907348633" blue="0.98799997568130493" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray200">
+            <color red="0.92900002002716064" green="0.94900000095367432" blue="0.96899998188018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

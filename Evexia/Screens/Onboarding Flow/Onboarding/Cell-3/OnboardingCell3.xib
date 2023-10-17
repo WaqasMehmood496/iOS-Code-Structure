@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="OnboardingCell3" customModule="Evexia_Production" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="812"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="812"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QcT-jh-cS8">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="812"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboarding_page_3" translatesAutoresizingMaskIntoConstraints="NO" id="xNG-Jh-qUI">
+                                <rect key="frame" x="0.0" y="95" width="393" height="418"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottom_side_rectangle_page_3" translatesAutoresizingMaskIntoConstraints="NO" id="jfl-cf-Fb7">
+                                <rect key="frame" x="0.0" y="491" width="128.66666666666666" height="321"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TWK-ZU-tNt" customClass="AttributedLabel" customModule="Atributika">
+                                <rect key="frame" x="137.66666666666666" y="531" width="117.66666666666666" height="22"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="numberOfLines">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jfl-cf-Fb7" firstAttribute="height" secondItem="xNG-Jh-qUI" secondAttribute="height" multiplier="0.767943" id="RF0-fV-A7M"/>
+                            <constraint firstItem="xNG-Jh-qUI" firstAttribute="height" secondItem="QcT-jh-cS8" secondAttribute="height" multiplier="0.514778" id="RXE-hz-NwT"/>
+                            <constraint firstItem="TWK-ZU-tNt" firstAttribute="top" secondItem="xNG-Jh-qUI" secondAttribute="bottom" constant="18" id="boR-di-e1s"/>
+                            <constraint firstItem="xNG-Jh-qUI" firstAttribute="top" secondItem="QcT-jh-cS8" secondAttribute="top" constant="95" id="fvr-7V-rUR"/>
+                            <constraint firstAttribute="trailing" secondItem="xNG-Jh-qUI" secondAttribute="trailing" id="hZJ-sQ-MBD"/>
+                            <constraint firstItem="TWK-ZU-tNt" firstAttribute="top" secondItem="jfl-cf-Fb7" secondAttribute="top" constant="40" id="oRe-PO-SCt"/>
+                            <constraint firstItem="TWK-ZU-tNt" firstAttribute="centerX" secondItem="QcT-jh-cS8" secondAttribute="centerX" id="pvt-k9-aR8"/>
+                            <constraint firstItem="jfl-cf-Fb7" firstAttribute="leading" secondItem="QcT-jh-cS8" secondAttribute="leading" id="xYT-Ps-qW1"/>
+                            <constraint firstItem="xNG-Jh-qUI" firstAttribute="leading" secondItem="QcT-jh-cS8" secondAttribute="leading" id="xdg-rj-lXw"/>
+                            <constraint firstItem="xNG-Jh-qUI" firstAttribute="width" secondItem="QcT-jh-cS8" secondAttribute="width" id="xl2-1M-BCo"/>
+                            <constraint firstAttribute="bottom" secondItem="jfl-cf-Fb7" secondAttribute="bottom" id="zMv-US-7YK"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="fvr-7V-rUR"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="QcT-jh-cS8" secondAttribute="bottom" id="NG7-oh-4oO"/>
+                <constraint firstAttribute="trailing" secondItem="QcT-jh-cS8" secondAttribute="trailing" id="YUY-0v-Zin"/>
+                <constraint firstItem="QcT-jh-cS8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="pnf-dN-R4e"/>
+                <constraint firstItem="QcT-jh-cS8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="zV1-u7-Jud"/>
+            </constraints>
+            <connections>
+                <outlet property="imageView" destination="xNG-Jh-qUI" id="Zuh-pd-04p"/>
+                <outlet property="textLabel" destination="TWK-ZU-tNt" id="AlG-nV-nqS"/>
+            </connections>
+            <point key="canvasLocation" x="40.458015267175568" y="19.718309859154932"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bottom_side_rectangle_page_3" width="128.66667175292969" height="321"/>
+        <image name="onboarding_page_3" width="375" height="418"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

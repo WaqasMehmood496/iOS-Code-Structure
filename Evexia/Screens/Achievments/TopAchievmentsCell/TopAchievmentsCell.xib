@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="218" id="KGk-i7-Jjw" customClass="TopAchievmentsCell" customModule="Evexia_Production" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="356" height="218"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="356" height="218"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="oVs-dB-Aje">
+                        <rect key="frame" x="0.0" y="25" width="356" height="80"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PLh-ef-tNC">
+                                <rect key="frame" x="0.0" y="0.0" width="170.5" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxJ-eG-FiA">
+                                        <rect key="frame" x="15" y="10" width="79.5" height="44"/>
+                                        <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="32"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNV-Kz-iRP">
+                                        <rect key="frame" x="15" y="54" width="30" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="achievmentsBlue"/>
+                                <constraints>
+                                    <constraint firstItem="cNV-Kz-iRP" firstAttribute="leading" secondItem="PLh-ef-tNC" secondAttribute="leading" constant="15" id="1fU-f9-eFc"/>
+                                    <constraint firstItem="fxJ-eG-FiA" firstAttribute="leading" secondItem="PLh-ef-tNC" secondAttribute="leading" constant="15" id="RVa-8L-2lF"/>
+                                    <constraint firstItem="fxJ-eG-FiA" firstAttribute="top" secondItem="PLh-ef-tNC" secondAttribute="top" constant="10" id="TKE-cd-7kO"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cNV-Kz-iRP" secondAttribute="trailing" constant="15" id="g97-kt-0H7"/>
+                                    <constraint firstItem="cNV-Kz-iRP" firstAttribute="top" secondItem="fxJ-eG-FiA" secondAttribute="bottom" id="kEz-eR-BmT"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ur6-V9-25E">
+                                <rect key="frame" x="185.5" y="0.0" width="170.5" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w62-JV-LKO">
+                                        <rect key="frame" x="15" y="10" width="79.5" height="44"/>
+                                        <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="32"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ioz-IU-yUs">
+                                        <rect key="frame" x="15" y="54" width="30" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="achievmentsBlue"/>
+                                <constraints>
+                                    <constraint firstItem="w62-JV-LKO" firstAttribute="top" secondItem="ur6-V9-25E" secondAttribute="top" constant="10" id="LM8-4m-Xwq"/>
+                                    <constraint firstItem="Ioz-IU-yUs" firstAttribute="top" secondItem="w62-JV-LKO" secondAttribute="bottom" id="WR8-PD-E6L"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ioz-IU-yUs" secondAttribute="trailing" constant="15" id="azg-YE-8VN"/>
+                                    <constraint firstItem="Ioz-IU-yUs" firstAttribute="leading" secondItem="ur6-V9-25E" secondAttribute="leading" constant="15" id="fuH-EL-PD2"/>
+                                    <constraint firstItem="w62-JV-LKO" firstAttribute="leading" secondItem="ur6-V9-25E" secondAttribute="leading" constant="15" id="qdl-iY-cGY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="Py2-nj-giq"/>
+                        </constraints>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Io6-Hk-M5w">
+                        <rect key="frame" x="0.0" y="120" width="356" height="80"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dXQ-Bp-T85">
+                                <rect key="frame" x="0.0" y="0.0" width="170.5" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hhp-9x-Ep7">
+                                        <rect key="frame" x="15" y="10" width="79.5" height="44"/>
+                                        <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="32"/>
+                                        <color key="textColor" name="achievmentsBlue"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMf-Nq-x8R">
+                                        <rect key="frame" x="15" y="54" width="30" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="12"/>
+                                        <color key="textColor" name="achievmentsBlue"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.92549019607843142" green="0.95294117647058818" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Hhp-9x-Ep7" firstAttribute="top" secondItem="dXQ-Bp-T85" secondAttribute="top" constant="10" id="21R-uI-V2f"/>
+                                    <constraint firstItem="lMf-Nq-x8R" firstAttribute="top" secondItem="Hhp-9x-Ep7" secondAttribute="bottom" id="QyG-PB-zT7"/>
+                                    <constraint firstItem="lMf-Nq-x8R" firstAttribute="leading" secondItem="dXQ-Bp-T85" secondAttribute="leading" constant="15" id="XN1-YU-WbQ"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="lMf-Nq-x8R" secondAttribute="trailing" constant="15" id="cqV-9b-uau"/>
+                                    <constraint firstItem="Hhp-9x-Ep7" firstAttribute="leading" secondItem="dXQ-Bp-T85" secondAttribute="leading" constant="15" id="jIe-Yd-wV2"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="reh-k8-TI8">
+                                <rect key="frame" x="185.5" y="0.0" width="170.5" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5NR-Sy-jXq">
+                                        <rect key="frame" x="15" y="10" width="79.5" height="44"/>
+                                        <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="32"/>
+                                        <color key="textColor" name="achievmentsBlue"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBb-cz-K6R">
+                                        <rect key="frame" x="15" y="54" width="30" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="12"/>
+                                        <color key="textColor" name="achievmentsBlue"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="achivmentsLightBlue"/>
+                                <constraints>
+                                    <constraint firstItem="XBb-cz-K6R" firstAttribute="top" secondItem="5NR-Sy-jXq" secondAttribute="bottom" id="7ZT-e2-MBU"/>
+                                    <constraint firstItem="5NR-Sy-jXq" firstAttribute="leading" secondItem="reh-k8-TI8" secondAttribute="leading" constant="15" id="92e-wK-6Zz"/>
+                                    <constraint firstItem="XBb-cz-K6R" firstAttribute="leading" secondItem="reh-k8-TI8" secondAttribute="leading" constant="15" id="Ppy-yB-hpI"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="XBb-cz-K6R" secondAttribute="trailing" constant="15" id="Wl0-Ps-Kiw"/>
+                                    <constraint firstItem="5NR-Sy-jXq" firstAttribute="top" secondItem="reh-k8-TI8" secondAttribute="top" constant="10" id="eFV-3v-0Cb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="fK5-h7-Ljr"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Io6-Hk-M5w" firstAttribute="top" secondItem="oVs-dB-Aje" secondAttribute="bottom" constant="15" id="0CI-83-XVa"/>
+                    <constraint firstAttribute="bottom" secondItem="Io6-Hk-M5w" secondAttribute="bottom" constant="16" id="0dc-Vg-tpz"/>
+                    <constraint firstItem="oVs-dB-Aje" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2XW-gV-du7"/>
+                    <constraint firstAttribute="trailing" secondItem="oVs-dB-Aje" secondAttribute="trailing" id="D7K-Kb-9eV"/>
+                    <constraint firstItem="oVs-dB-Aje" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="hgV-5c-f8i"/>
+                    <constraint firstItem="Io6-Hk-M5w" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="lgy-x0-GHj"/>
+                    <constraint firstAttribute="trailing" secondItem="Io6-Hk-M5w" secondAttribute="trailing" id="pTx-3K-BEQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="completedCountLabel" destination="5NR-Sy-jXq" id="5aW-0T-qkp"/>
+                <outlet property="completedDescriptionLabel" destination="XBb-cz-K6R" id="HyB-ML-tmC"/>
+                <outlet property="completedView" destination="reh-k8-TI8" id="09J-k3-oGc"/>
+                <outlet property="daysInAppView" destination="ur6-V9-25E" id="RPK-3w-oeL"/>
+                <outlet property="inAppCountLabel" destination="w62-JV-LKO" id="5qY-c6-mev"/>
+                <outlet property="inAppDescriptionLabel" destination="Ioz-IU-yUs" id="ZE3-8g-NrX"/>
+                <outlet property="prescribedCountLabel" destination="Hhp-9x-Ep7" id="k8D-oN-Vbv"/>
+                <outlet property="prescribedDescriptionLabel" destination="lMf-Nq-x8R" id="OjX-PP-iHj"/>
+                <outlet property="prescribedView" destination="dXQ-Bp-T85" id="t3O-jv-Njs"/>
+                <outlet property="stepsCountLabel" destination="fxJ-eG-FiA" id="XhM-BJ-LG9"/>
+                <outlet property="stepsDescriptionLabel" destination="cNV-Kz-iRP" id="Z3Y-gb-3hO"/>
+                <outlet property="stepsView" destination="PLh-ef-tNC" id="qV2-5n-Pxe"/>
+            </connections>
+            <point key="canvasLocation" x="163.768115942029" y="144.64285714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="achievmentsBlue">
+            <color red="0.0" green="0.32156862745098042" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="achivmentsLightBlue">
+            <color red="0.92549019607843142" green="0.95294117647058818" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

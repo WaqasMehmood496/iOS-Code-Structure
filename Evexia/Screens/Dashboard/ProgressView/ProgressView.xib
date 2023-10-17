@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+        <array key="NunitoSans-Regular.ttf">
+            <string>NunitoSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProgressView" customModule="Evexia_Production" customModuleProvider="target">
+            <connections>
+                <outlet property="dailyLabel" destination="DB1-b3-L8b" id="4qS-Ey-jQ0"/>
+                <outlet property="ringsView" destination="Pn0-v8-M6x" id="Uf6-19-3ai"/>
+                <outlet property="titleLabel" destination="tpQ-Tk-feL" id="8Ex-9q-HEr"/>
+                <outlet property="view" destination="iN0-l3-epB" id="JpV-fO-aLg"/>
+                <outlet property="weeklyLabel" destination="0eF-xQ-lyV" id="mf4-W6-ThW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="413" height="426"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="WB3-Qn-zEE">
+                    <rect key="frame" x="0.0" y="0.0" width="413" height="426"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="vVj-XR-sgN">
+                            <rect key="frame" x="16" y="60" width="381" height="288"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This week progress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpQ-Tk-feL">
+                                    <rect key="frame" x="0.0" y="0.0" width="381" height="27"/>
+                                    <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="20"/>
+                                    <color key="textColor" name="gray900"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dCR-sM-ETX">
+                                    <rect key="frame" x="0.0" y="51" width="381" height="237"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pn0-v8-M6x" customClass="CircularProgressView" customModule="Evexia_Production" customModuleProvider="target">
+                                            <rect key="frame" x="72" y="0.0" width="237" height="237"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="Pn0-v8-M6x" secondAttribute="height" multiplier="1:1" id="kbi-hf-Ceq"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                    <color key="value" name="eat"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="ringWidth">
+                                                    <real key="value" value="20"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <edgeInsets key="layoutMargins" top="0.0" left="72" bottom="0.0" right="72"/>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bab-uh-XFh">
+                            <rect key="frame" x="16" y="380" width="381" height="22"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="GEH-pa-PB0">
+                                    <rect key="frame" x="76.5" y="0.0" width="228" height="22"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WOs-3N-7QZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="114" height="22"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="29C-Ns-YMF" customClass="RoundedView" customModule="Evexia_Production" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="7" width="8" height="8"/>
+                                                    <color key="backgroundColor" name="moveNew"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="8" id="b8j-Kw-yrj"/>
+                                                        <constraint firstAttribute="height" constant="8" id="qD5-tB-bRP"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily goals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DB1-b3-L8b">
+                                                    <rect key="frame" x="16" y="0.0" width="98" height="22"/>
+                                                    <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="16"/>
+                                                    <color key="textColor" name="gray900"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="NNP-Gx-Zc5">
+                                            <rect key="frame" x="114" y="0.0" width="114" height="22"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aed-Es-x5A" customClass="RoundedView" customModule="Evexia_Production" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="7" width="8" height="8"/>
+                                                    <color key="backgroundColor" name="darkBlueNew"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="8" id="289-Nw-4f4"/>
+                                                        <constraint firstAttribute="height" constant="8" id="cwa-L4-eFh"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekly Goals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0eF-xQ-lyV">
+                                                    <rect key="frame" x="16" y="0.0" width="98" height="22"/>
+                                                    <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="16"/>
+                                                    <color key="textColor" name="gray900"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <edgeInsets key="layoutMargins" top="16" left="16" bottom="24" right="16"/>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="LJf-HX-x2e">
+                    <rect key="frame" x="154" y="209" width="105" height="41"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="dFz-nJ-X8f">
+                            <rect key="frame" x="7" y="0.0" width="91.5" height="16.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily goals:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5R2-cq-8KB">
+                                    <rect key="frame" x="0.0" y="0.0" width="61.5" height="16.5"/>
+                                    <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="12"/>
+                                    <color key="textColor" name="gray600"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="75%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AsO-xa-zZ8">
+                                    <rect key="frame" x="65.5" y="0.0" width="26" height="16.5"/>
+                                    <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="12"/>
+                                    <color key="textColor" name="gray700"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="JK4-2F-wzi">
+                            <rect key="frame" x="0.0" y="24.5" width="105" height="16.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weekly goals:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hkq-HK-sFB">
+                                    <rect key="frame" x="0.0" y="0.0" width="75" height="16.5"/>
+                                    <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="12"/>
+                                    <color key="textColor" name="gray600"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gs2-5Y-xn2">
+                                    <rect key="frame" x="79" y="0.0" width="26" height="16.5"/>
+                                    <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="12"/>
+                                    <color key="textColor" name="gray700"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="WB3-Qn-zEE" secondAttribute="bottom" id="BOp-SC-vqV"/>
+                <constraint firstItem="WB3-Qn-zEE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Tee-6a-2p8"/>
+                <constraint firstItem="LJf-HX-x2e" firstAttribute="centerY" secondItem="dCR-sM-ETX" secondAttribute="centerY" id="UHP-PS-wRC"/>
+                <constraint firstAttribute="trailing" secondItem="WB3-Qn-zEE" secondAttribute="trailing" id="pL6-Cg-D8u"/>
+                <constraint firstItem="LJf-HX-x2e" firstAttribute="centerX" secondItem="dCR-sM-ETX" secondAttribute="centerX" id="pu6-8C-7BY"/>
+                <constraint firstItem="WB3-Qn-zEE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tir-uF-b05"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="121.0144927536232" y="-79.6875"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="darkBlueNew">
+            <color red="0.071000002324581146" green="0.19599999487400055" blue="0.32199999690055847" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="eat">
+            <color red="0.23529411764705882" green="0.52156862745098043" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray600">
+            <color red="0.44299998879432678" green="0.50199997425079346" blue="0.58799999952316284" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray700">
+            <color red="0.28999999165534973" green="0.33300000429153442" blue="0.40799999237060547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray900">
+            <color red="0.10196078431372549" green="0.12156862745098039" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="moveNew">
+            <color red="0.45098039215686275" green="0.68235294117647061" blue="0.89411764705882357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

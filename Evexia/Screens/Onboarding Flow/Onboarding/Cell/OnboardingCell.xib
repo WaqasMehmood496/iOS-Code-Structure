@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="gTV-IL-0wX" customClass="OnboardingCell" customModule="Evexia_Production" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="812"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="812"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tzo-jd-GWi">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="812"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eqo-yb-rSe">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="812"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottom_rectangle_page_1" translatesAutoresizingMaskIntoConstraints="NO" id="u9k-Lt-7wB">
+                                        <rect key="frame" x="209" y="722" width="184" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="184" id="BWW-S9-1hZ"/>
+                                            <constraint firstAttribute="height" constant="90" id="olF-7d-umn"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboarding_page_1" translatesAutoresizingMaskIntoConstraints="NO" id="Dzn-pK-mI7">
+                                        <rect key="frame" x="0.0" y="83" width="393" height="639"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RmS-xP-VxH" customClass="AttributedLabel" customModule="Atributika">
+                                        <rect key="frame" x="26" y="639" width="314" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="314" id="DyT-JO-gmg"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="numberOfLines">
+                                                <integer key="value" value="0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="RmS-xP-VxH" firstAttribute="leading" secondItem="Eqo-yb-rSe" secondAttribute="leading" constant="26" id="70d-vX-VKA"/>
+                                    <constraint firstItem="Dzn-pK-mI7" firstAttribute="leading" secondItem="Eqo-yb-rSe" secondAttribute="leading" id="8BP-WX-daI"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dzn-pK-mI7" secondAttribute="trailing" id="DH0-Hd-cXi"/>
+                                    <constraint firstAttribute="trailing" secondItem="u9k-Lt-7wB" secondAttribute="trailing" id="JbC-Es-NNZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="u9k-Lt-7wB" secondAttribute="bottom" id="OFO-0J-DGh"/>
+                                    <constraint firstItem="u9k-Lt-7wB" firstAttribute="top" secondItem="Dzn-pK-mI7" secondAttribute="bottom" id="dt2-6W-jNr"/>
+                                    <constraint firstItem="u9k-Lt-7wB" firstAttribute="top" secondItem="RmS-xP-VxH" secondAttribute="bottom" constant="61" id="tT5-XP-uKf"/>
+                                    <constraint firstItem="Dzn-pK-mI7" firstAttribute="top" secondItem="Eqo-yb-rSe" secondAttribute="top" constant="83" id="tlE-he-XJr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Eqo-yb-rSe" secondAttribute="bottom" id="0O0-2V-0ps"/>
+                            <constraint firstItem="Eqo-yb-rSe" firstAttribute="width" secondItem="Tzo-jd-GWi" secondAttribute="width" id="BLt-WF-6o2"/>
+                            <constraint firstItem="Eqo-yb-rSe" firstAttribute="height" secondItem="Tzo-jd-GWi" secondAttribute="height" id="Vcw-yy-Agy"/>
+                            <constraint firstAttribute="trailing" secondItem="Eqo-yb-rSe" secondAttribute="trailing" id="XQT-AL-Bum"/>
+                            <constraint firstItem="Eqo-yb-rSe" firstAttribute="leading" secondItem="Tzo-jd-GWi" secondAttribute="leading" id="ffD-8S-igE"/>
+                            <constraint firstItem="Eqo-yb-rSe" firstAttribute="centerX" secondItem="Tzo-jd-GWi" secondAttribute="centerX" id="kmy-SQ-f1e"/>
+                            <constraint firstItem="Eqo-yb-rSe" firstAttribute="top" secondItem="Tzo-jd-GWi" secondAttribute="top" id="kpR-E9-75u"/>
+                        </constraints>
+                    </scrollView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Tzo-jd-GWi" secondAttribute="trailing" id="3Ob-QH-YEs"/>
+                <constraint firstAttribute="bottom" secondItem="Tzo-jd-GWi" secondAttribute="bottom" id="Cdy-hv-qeB"/>
+                <constraint firstItem="Tzo-jd-GWi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="TY8-7N-xKr"/>
+                <constraint firstItem="Tzo-jd-GWi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="xVg-Z2-TBQ"/>
+            </constraints>
+            <size key="customSize" width="292" height="364"/>
+            <connections>
+                <outlet property="imageView" destination="Dzn-pK-mI7" id="Tg4-9b-9b2"/>
+                <outlet property="textLabel" destination="RmS-xP-VxH" id="xNJ-Xp-Xjb"/>
+            </connections>
+            <point key="canvasLocation" x="123.91304347826087" y="209.59821428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bottom_rectangle_page_1" width="176" height="87"/>
+        <image name="onboarding_page_1" width="375" height="639"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

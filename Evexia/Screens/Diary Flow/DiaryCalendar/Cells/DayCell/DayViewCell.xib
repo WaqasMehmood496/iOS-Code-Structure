@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Regular.ttf">
+            <string>NunitoSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DayViewCell" id="gTV-IL-0wX" customClass="DayViewCell" customModule="Evexia_Production" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="129" height="127"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="129" height="127"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2fP-pC-6mv">
+                        <rect key="frame" x="42.5" y="41.5" width="44" height="44"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="2IX-MR-ZBb"/>
+                            <constraint firstAttribute="width" constant="44" id="xhV-ZE-dJ1"/>
+                        </constraints>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="v3c-3Z-Xbi">
+                        <rect key="frame" x="0.0" y="-38" width="129" height="165"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RvI-cW-UTv">
+                                <rect key="frame" x="45" y="54" width="39.5" height="95"/>
+                                <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5hF-EW-9oh">
+                                <rect key="frame" x="62.5" y="153" width="4" height="4"/>
+                                <color key="backgroundColor" name="orange"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="4" id="Dlp-tF-FLP"/>
+                                    <constraint firstAttribute="width" constant="4" id="si6-Hu-Zj2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <edgeInsets key="layoutMargins" top="10" left="0.0" bottom="8" right="0.0"/>
+                    </stackView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="2fP-pC-6mv" firstAttribute="centerX" secondItem="RvI-cW-UTv" secondAttribute="centerX" id="1sD-OI-2rl"/>
+                <constraint firstItem="v3c-3Z-Xbi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="BRe-DR-8tu"/>
+                <constraint firstAttribute="bottom" secondItem="v3c-3Z-Xbi" secondAttribute="bottom" id="FiW-KJ-mKr"/>
+                <constraint firstItem="RvI-cW-UTv" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="bRj-j2-1y7"/>
+                <constraint firstAttribute="trailing" secondItem="v3c-3Z-Xbi" secondAttribute="trailing" id="ePb-rg-mGs"/>
+                <constraint firstItem="RvI-cW-UTv" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="oOw-he-raC"/>
+                <constraint firstItem="2fP-pC-6mv" firstAttribute="centerY" secondItem="RvI-cW-UTv" secondAttribute="centerY" id="spx-sb-HIk"/>
+            </constraints>
+            <size key="customSize" width="129" height="127"/>
+            <connections>
+                <outlet property="dateLabel" destination="RvI-cW-UTv" id="5qF-sW-l71"/>
+                <outlet property="dotView" destination="5hF-EW-9oh" id="7pg-8L-mlg"/>
+                <outlet property="shadowView" destination="2fP-pC-6mv" id="yWd-1G-lzl"/>
+            </connections>
+            <point key="canvasLocation" x="-29.710144927536234" y="76.674107142857139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="orange">
+            <color red="1" green="0.65100002288818359" blue="0.3059999942779541" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

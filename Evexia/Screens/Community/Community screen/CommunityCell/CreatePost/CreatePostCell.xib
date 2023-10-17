@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Regular.ttf">
+            <string>NunitoSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="104" id="KGk-i7-Jjw" customClass="CreatePostCell" customModule="Evexia_Production" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="136"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="136"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mA2-WV-vXr" userLabel="CornerView">
+                        <rect key="frame" x="16" y="0.0" width="311" height="120"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="yoi-wg-9HU">
+                                <rect key="frame" x="12" y="12" width="287" height="96"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JaH-iB-1GW">
+                                        <rect key="frame" x="0.0" y="32" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="8xq-Xf-oeK"/>
+                                            <constraint firstAttribute="height" constant="32" id="ZHV-VC-Jas"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZmC-Hn-AbI">
+                                        <rect key="frame" x="44" y="0.0" width="243" height="96"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What’s on your mind?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFn-Oa-wD0">
+                                                <rect key="frame" x="20" y="20" width="158" height="56"/>
+                                                <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="16"/>
+                                                <color key="textColor" name="gray500"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSH-tE-gre">
+                                                <rect key="frame" x="198" y="36" width="24" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="Nnw-lx-PD9"/>
+                                                    <constraint firstAttribute="width" constant="24" id="XXL-EO-u6f"/>
+                                                </constraints>
+                                                <state key="normal" image="icon_community_clips"/>
+                                                <connections>
+                                                    <action selector="tapToCreatePost:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="y6u-3U-PE9"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" name="gray100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="WSH-tE-gre" secondAttribute="trailing" constant="21" id="8FP-Vs-f7p"/>
+                                            <constraint firstItem="LFn-Oa-wD0" firstAttribute="leading" secondItem="ZmC-Hn-AbI" secondAttribute="leading" constant="20" id="PZY-SW-Gc1"/>
+                                            <constraint firstItem="LFn-Oa-wD0" firstAttribute="top" secondItem="ZmC-Hn-AbI" secondAttribute="top" constant="20" id="cXi-Rh-oRS"/>
+                                            <constraint firstItem="WSH-tE-gre" firstAttribute="leading" secondItem="LFn-Oa-wD0" secondAttribute="trailing" constant="20" id="j3t-Oa-FGo"/>
+                                            <constraint firstAttribute="bottom" secondItem="LFn-Oa-wD0" secondAttribute="bottom" constant="20" id="vND-my-ZCA"/>
+                                            <constraint firstItem="WSH-tE-gre" firstAttribute="centerY" secondItem="ZmC-Hn-AbI" secondAttribute="centerY" id="wj6-SH-TJR"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="yoi-wg-9HU" secondAttribute="bottom" constant="12" id="GRy-33-UcA"/>
+                            <constraint firstItem="yoi-wg-9HU" firstAttribute="leading" secondItem="mA2-WV-vXr" secondAttribute="leading" constant="12" id="Hxy-Ai-a9g"/>
+                            <constraint firstItem="yoi-wg-9HU" firstAttribute="top" secondItem="mA2-WV-vXr" secondAttribute="top" constant="12" id="WQz-xk-YqP"/>
+                            <constraint firstAttribute="trailing" secondItem="yoi-wg-9HU" secondAttribute="trailing" constant="12" id="gy1-Ay-vNu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="mA2-WV-vXr" secondAttribute="bottom" constant="16" id="atW-Ep-ScW"/>
+                    <constraint firstAttribute="trailing" secondItem="mA2-WV-vXr" secondAttribute="trailing" constant="16" id="hI9-X7-b1S"/>
+                    <constraint firstItem="mA2-WV-vXr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="i65-7W-qca"/>
+                    <constraint firstItem="mA2-WV-vXr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="kga-v8-bCT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="attachButton" destination="WSH-tE-gre" id="JbY-od-wbc"/>
+                <outlet property="avatarImageView" destination="JaH-iB-1GW" id="g5k-bM-eYL"/>
+                <outlet property="cornerView" destination="mA2-WV-vXr" id="Ehw-JW-TcQ"/>
+                <outlet property="newPostTitleLabel" destination="LFn-Oa-wD0" id="kwY-eU-0Du"/>
+                <outlet property="newPostView" destination="ZmC-Hn-AbI" id="onj-k7-MB5"/>
+            </connections>
+            <point key="canvasLocation" x="112.31884057971016" y="72.991071428571431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_community_clips" width="24" height="24"/>
+        <namedColor name="gray100">
+            <color red="0.96899998188018799" green="0.98000001907348633" blue="0.98799997568130493" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray500">
+            <color red="0.62745098039215685" green="0.68235294117647061" blue="0.75294117647058822" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

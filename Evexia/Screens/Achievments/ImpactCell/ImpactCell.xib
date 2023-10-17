@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+        <array key="NunitoSans-SemiBold.ttf">
+            <string>NunitoSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="rZh-Lw-YCq" customClass="ImpactCell" customModule="Evexia_Production" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="235"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="235"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qVR-8Z-dDi">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="175.66666666666666"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_impact_smile" translatesAutoresizingMaskIntoConstraints="NO" id="iFq-8P-3HO">
+                                <rect key="frame" x="16" y="24" width="52" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="9VR-WB-hkP"/>
+                                    <constraint firstAttribute="width" constant="52" id="A26-r9-cnd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your completed goals help contribute to saving our planet" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HjZ-Fp-Gns">
+                                <rect key="frame" x="84" y="23.999999999999996" width="229" height="51.666666666666657"/>
+                                <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="14"/>
+                                <color key="textColor" name="gray800"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSf-Od-VCi">
+                                <rect key="frame" x="84" y="99.666666666666671" width="210" height="52.000000000000014"/>
+                                <color key="backgroundColor" name="orange"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="Fiz-rL-QY7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NunitoSans-SemiBold" family="Nunito Sans" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="See my impact">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="seeImpactDidTap" destination="rZh-Lw-YCq" eventType="touchUpInside" id="YVk-HT-C67"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PSf-Od-VCi" firstAttribute="leading" secondItem="qVR-8Z-dDi" secondAttribute="leading" constant="84" id="1mc-MR-w0u"/>
+                            <constraint firstItem="HjZ-Fp-Gns" firstAttribute="top" secondItem="qVR-8Z-dDi" secondAttribute="top" constant="24" id="Gw5-2Z-KDl"/>
+                            <constraint firstItem="iFq-8P-3HO" firstAttribute="leading" secondItem="qVR-8Z-dDi" secondAttribute="leading" constant="16" id="Kmd-9f-cIa"/>
+                            <constraint firstAttribute="trailing" secondItem="PSf-Od-VCi" secondAttribute="trailing" constant="49" id="WEq-T7-RcE"/>
+                            <constraint firstAttribute="bottom" secondItem="PSf-Od-VCi" secondAttribute="bottom" constant="24" id="XiD-UE-swz"/>
+                            <constraint firstAttribute="trailing" secondItem="HjZ-Fp-Gns" secondAttribute="trailing" constant="30" id="dEk-Ie-NDW"/>
+                            <constraint firstItem="HjZ-Fp-Gns" firstAttribute="leading" secondItem="iFq-8P-3HO" secondAttribute="trailing" constant="16" id="tzq-6M-eGZ"/>
+                            <constraint firstItem="iFq-8P-3HO" firstAttribute="top" secondItem="qVR-8Z-dDi" secondAttribute="top" constant="24" id="vhF-nA-vLv"/>
+                            <constraint firstItem="PSf-Od-VCi" firstAttribute="top" secondItem="HjZ-Fp-Gns" secondAttribute="bottom" constant="24" id="x0m-rD-xxB"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Explore Your Achievements" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qmr-cx-fGE">
+                        <rect key="frame" x="0.0" y="207.66666666666666" width="343" height="27.333333333333343"/>
+                        <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="20"/>
+                        <color key="textColor" name="gray900"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="Z5N-v7-lCY"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="qVR-8Z-dDi" firstAttribute="leading" secondItem="rZh-Lw-YCq" secondAttribute="leading" id="7wj-mX-0hh"/>
+                <constraint firstAttribute="trailing" secondItem="qVR-8Z-dDi" secondAttribute="trailing" id="CtU-ew-1jp"/>
+                <constraint firstItem="qmr-cx-fGE" firstAttribute="top" secondItem="qVR-8Z-dDi" secondAttribute="bottom" constant="32" id="GVj-dA-bqq"/>
+                <constraint firstAttribute="bottom" secondItem="qmr-cx-fGE" secondAttribute="bottom" id="Vkn-EK-Vms"/>
+                <constraint firstItem="qmr-cx-fGE" firstAttribute="leading" secondItem="rZh-Lw-YCq" secondAttribute="leading" id="lp1-er-wHL"/>
+                <constraint firstAttribute="trailing" secondItem="qmr-cx-fGE" secondAttribute="trailing" id="m04-hB-BSJ"/>
+                <constraint firstItem="qVR-8Z-dDi" firstAttribute="top" secondItem="rZh-Lw-YCq" secondAttribute="top" id="r3u-99-fh1"/>
+            </constraints>
+            <size key="customSize" width="343" height="235"/>
+            <connections>
+                <outlet property="cornerView" destination="qVR-8Z-dDi" id="0Mx-sc-oBx"/>
+                <outlet property="seeImpactButton" destination="PSf-Od-VCi" id="HSf-Si-s6i"/>
+            </connections>
+            <point key="canvasLocation" x="149.59999999999999" y="-22.03898050974513"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="image_impact_smile" width="52" height="65"/>
+        <namedColor name="gray800">
+            <color red="0.17599999904632568" green="0.21600000560283661" blue="0.28200000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray900">
+            <color red="0.10196078431372549" green="0.12156862745098039" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="orange">
+            <color red="0.89803921568627454" green="0.57647058823529407" blue="0.20784313725490197" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

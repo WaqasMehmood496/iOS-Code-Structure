@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Regular.ttf">
+            <string>NunitoSans-Regular</string>
+        </array>
+        <array key="NunitoSans-SemiBold.ttf">
+            <string>NunitoSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PostView" customModule="Evexia_Production" customModuleProvider="target">
+            <connections>
+                <outlet property="avatarImageView" destination="4o0-JD-1YZ" id="424-YQ-zlN"/>
+                <outlet property="imageCollectionView" destination="TeK-qm-vZb" id="EPx-6e-dgN"/>
+                <outlet property="likeToPostButton" destination="is6-ny-VOi" id="lr2-Fb-VTh"/>
+                <outlet property="postTextLabel" destination="LXD-uO-um0" id="gFI-MS-zG2"/>
+                <outlet property="timeAgoLabel" destination="4mA-BS-fVy" id="YWK-uD-ozc"/>
+                <outlet property="userNameLabel" destination="uJW-PK-XXA" id="EXm-xn-3B2"/>
+                <outlet property="view" destination="iN0-l3-epB" id="cbV-7B-1NJ"/>
+                <outlet property="widthContentViewConstant" destination="UnJ-MW-HVk" id="7l7-Sc-GLd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="433"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bhg-se-eQE" userLabel="ContentView">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="433"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Okr-RL-fyo">
+                            <rect key="frame" x="0.0" y="72" width="414" height="301"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="dhm-iM-emy">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="23.5"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LXD-uO-um0" customClass="AttributedLabel" customModule="Atributika">
+                                            <rect key="frame" x="16" y="0.0" width="382" height="23.5"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="numberOfLines">
+                                                    <integer key="value" value="0"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <edgeInsets key="layoutMargins" top="0.0" left="16" bottom="0.0" right="16"/>
+                                </stackView>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="TeK-qm-vZb">
+                                    <rect key="frame" x="0.0" y="35.5" width="414" height="265.5"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="TeK-qm-vZb" secondAttribute="height" multiplier="343:220" id="X7b-oE-gVn"/>
+                                    </constraints>
+                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CfD-pz-tBV">
+                                        <size key="itemSize" width="128" height="128"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                    <cells/>
+                                </collectionView>
+                            </subviews>
+                        </stackView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="4o0-JD-1YZ">
+                            <rect key="frame" x="16" y="16" width="40" height="40"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="5HP-Fh-UiA"/>
+                                <constraint firstAttribute="height" constant="40" id="5e6-UQ-EKl"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Betterhelp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJW-PK-XXA">
+                            <rect key="frame" x="68" y="16" width="330" height="22"/>
+                            <fontDescription key="fontDescription" name="NunitoSans-SemiBold" family="Nunito Sans" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 hours ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4mA-BS-fVy">
+                            <rect key="frame" x="68" y="39" width="330" height="16.5"/>
+                            <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="12"/>
+                            <color key="textColor" name="gray500"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="PBf-9Z-ukH">
+                            <rect key="frame" x="6" y="381" width="92" height="44"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="is6-ny-VOi">
+                                    <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="2Vi-ce-LI1"/>
+                                        <constraint firstAttribute="width" constant="44" id="s1f-yE-UPi"/>
+                                    </constraints>
+                                    <state key="normal" image="ico_community_heart"/>
+                                    <connections>
+                                        <action selector="tapToLike" destination="-1" eventType="touchUpInside" id="Tvg-If-WdS"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nZP-Sp-6Hi">
+                                    <rect key="frame" x="48" y="0.0" width="44" height="44"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="CXU-Kg-e4K"/>
+                                        <constraint firstAttribute="width" constant="44" id="xzD-d7-QeU"/>
+                                    </constraints>
+                                    <state key="normal" image="ico_community_comment"/>
+                                    <connections>
+                                        <action selector="tapToAddComment" destination="-1" eventType="touchUpInside" id="czs-uh-cQk"/>
+                                    </connections>
+                                </button>
+                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRD-T7-z6A">
+                                    <rect key="frame" x="92" y="0.0" width="44" height="44"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="44" id="4Dd-Sf-SRl"/>
+                                        <constraint firstAttribute="height" constant="44" id="uUv-Ax-tId"/>
+                                    </constraints>
+                                    <state key="normal" image="ico_community_reply"/>
+                                    <connections>
+                                        <action selector="tapToShare" destination="-1" eventType="touchUpInside" id="oTB-qs-Mdy"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EKH-lV-A5y">
+                            <rect key="frame" x="0.0" y="432" width="414" height="1"/>
+                            <color key="backgroundColor" name="gray300"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="2EA-vr-beH"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="uJW-PK-XXA" secondAttribute="trailing" constant="16" id="1YJ-rD-WhU"/>
+                        <constraint firstItem="PBf-9Z-ukH" firstAttribute="leading" secondItem="bhg-se-eQE" secondAttribute="leading" constant="6" id="3vG-Mb-Bv3"/>
+                        <constraint firstItem="4mA-BS-fVy" firstAttribute="top" secondItem="uJW-PK-XXA" secondAttribute="bottom" constant="1" id="4qC-RR-vi8"/>
+                        <constraint firstItem="4mA-BS-fVy" firstAttribute="leading" secondItem="4o0-JD-1YZ" secondAttribute="trailing" constant="12" id="7FI-XS-Dhu"/>
+                        <constraint firstItem="4o0-JD-1YZ" firstAttribute="leading" secondItem="bhg-se-eQE" secondAttribute="leading" constant="16" id="E2k-h2-8Vr"/>
+                        <constraint firstItem="Okr-RL-fyo" firstAttribute="leading" secondItem="bhg-se-eQE" secondAttribute="leading" id="FjP-XP-Wd9"/>
+                        <constraint firstAttribute="trailing" secondItem="Okr-RL-fyo" secondAttribute="trailing" id="G3Q-82-rGO"/>
+                        <constraint firstItem="4o0-JD-1YZ" firstAttribute="top" secondItem="bhg-se-eQE" secondAttribute="top" constant="16" id="KJg-wp-QJn"/>
+                        <constraint firstItem="uJW-PK-XXA" firstAttribute="leading" secondItem="4o0-JD-1YZ" secondAttribute="trailing" constant="12" id="TvH-W3-ahu"/>
+                        <constraint firstItem="EKH-lV-A5y" firstAttribute="bottom" secondItem="PBf-9Z-ukH" secondAttribute="bottom" constant="8" id="UYk-R0-N8D"/>
+                        <constraint firstAttribute="width" constant="414" id="UnJ-MW-HVk"/>
+                        <constraint firstItem="EKH-lV-A5y" firstAttribute="leading" secondItem="bhg-se-eQE" secondAttribute="leading" id="WLG-ne-RNe"/>
+                        <constraint firstItem="Okr-RL-fyo" firstAttribute="top" secondItem="4o0-JD-1YZ" secondAttribute="bottom" constant="16" id="WRB-kx-rGA"/>
+                        <constraint firstAttribute="trailing" secondItem="EKH-lV-A5y" secondAttribute="trailing" id="ayo-Ij-uLg"/>
+                        <constraint firstAttribute="trailing" secondItem="4mA-BS-fVy" secondAttribute="trailing" constant="16" id="bi9-VI-2Q1"/>
+                        <constraint firstItem="PBf-9Z-ukH" firstAttribute="top" secondItem="Okr-RL-fyo" secondAttribute="bottom" constant="8" id="jI1-5L-Lbq"/>
+                        <constraint firstItem="uJW-PK-XXA" firstAttribute="top" secondItem="bhg-se-eQE" secondAttribute="top" constant="16" id="pML-z6-KLK"/>
+                        <constraint firstAttribute="bottom" secondItem="EKH-lV-A5y" secondAttribute="bottom" id="qHT-DB-rbA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="bhg-se-eQE" secondAttribute="bottom" id="25F-ee-Jw9"/>
+                <constraint firstItem="bhg-se-eQE" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="6Ub-Fw-gqB"/>
+                <constraint firstItem="bhg-se-eQE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="JJR-Zh-PjZ"/>
+                <constraint firstItem="bhg-se-eQE" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="MNn-j2-v9d"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-43.861607142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="avatar" width="59" height="59"/>
+        <image name="ico_community_comment" width="24" height="24"/>
+        <image name="ico_community_heart" width="24" height="24"/>
+        <image name="ico_community_reply" width="24" height="24"/>
+        <namedColor name="gray300">
+            <color red="0.88235294117647056" green="0.90980392156862744" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray500">
+            <color red="0.62745098039215685" green="0.68235294117647061" blue="0.75294117647058822" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

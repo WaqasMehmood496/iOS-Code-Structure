@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans-Bold.ttf">
+            <string>NunitoSans-Bold</string>
+        </array>
+        <array key="NunitoSans-Regular.ttf">
+            <string>NunitoSans-Regular</string>
+        </array>
+        <array key="NunitoSans-SemiBold.ttf">
+            <string>NunitoSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CompletingDailyTasksView" customModule="Evexia_Production" customModuleProvider="target">
+            <connections>
+                <outlet property="actionButton" destination="1Lg-Zh-Uen" id="apv-F3-BNx"/>
+                <outlet property="cornerView" destination="0Nu-a8-IIr" id="Qwl-Lq-8rX"/>
+                <outlet property="planetImageView" destination="Rst-wk-NA8" id="tnq-Ko-wE2"/>
+                <outlet property="subTitleLabel" destination="KNH-cB-ODU" id="GGo-hJ-w3R"/>
+                <outlet property="titleLabel" destination="5Wa-6a-uKV" id="txB-vV-NR6"/>
+                <outlet property="view" destination="sm6-i7-yYI" id="IfL-nP-pgw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="sm6-i7-yYI">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="415"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Nu-a8-IIr">
+                    <rect key="frame" x="16" y="85" width="343" height="330"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Wow, congratulations on continually completing your daily tasks. You will really notice the difference." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Wa-6a-uKV">
+                            <rect key="frame" x="16" y="117.5" width="311" height="74"/>
+                            <fontDescription key="fontDescription" name="NunitoSans-Bold" family="Nunito Sans" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Completed 20 Daily Tasks" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KNH-cB-ODU">
+                            <rect key="frame" x="40" y="199.5" width="263" height="22.5"/>
+                            <fontDescription key="fontDescription" name="NunitoSans-Regular" family="Nunito Sans" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Lg-Zh-Uen">
+                            <rect key="frame" x="66" y="246" width="211" height="52"/>
+                            <color key="backgroundColor" red="1" green="0.65098039220000004" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="52" id="0fT-Ld-KdU"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="NunitoSans-SemiBold" family="Nunito Sans" pointSize="20"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Get the reward">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="tapToActionButton:" destination="-1" eventType="touchUpInside" id="ofR-Qo-GTZ"/>
+                            </connections>
+                        </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images_completing_daily_20tasks" translatesAutoresizingMaskIntoConstraints="NO" id="Rst-wk-NA8">
+                            <rect key="frame" x="56" y="-73.5" width="231" height="167"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="231" id="EOY-V2-3oN"/>
+                                <constraint firstAttribute="height" constant="167" id="zTl-Rt-LeX"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="KNH-cB-ODU" secondAttribute="trailing" constant="40" id="28m-tU-GEo"/>
+                        <constraint firstItem="Rst-wk-NA8" firstAttribute="centerY" secondItem="0Nu-a8-IIr" secondAttribute="top" constant="10" id="4eZ-ZF-YeO"/>
+                        <constraint firstItem="1Lg-Zh-Uen" firstAttribute="top" secondItem="KNH-cB-ODU" secondAttribute="bottom" constant="24" id="Dya-cz-BJg"/>
+                        <constraint firstItem="Rst-wk-NA8" firstAttribute="centerX" secondItem="0Nu-a8-IIr" secondAttribute="centerX" id="JRM-aN-6J4"/>
+                        <constraint firstItem="5Wa-6a-uKV" firstAttribute="leading" secondItem="0Nu-a8-IIr" secondAttribute="leading" constant="16" id="Njb-iM-bkn"/>
+                        <constraint firstItem="KNH-cB-ODU" firstAttribute="top" secondItem="5Wa-6a-uKV" secondAttribute="bottom" constant="8" id="ONT-bU-hMX"/>
+                        <constraint firstAttribute="bottom" secondItem="1Lg-Zh-Uen" secondAttribute="bottom" constant="32" id="ahU-u2-N2R"/>
+                        <constraint firstItem="1Lg-Zh-Uen" firstAttribute="leading" secondItem="0Nu-a8-IIr" secondAttribute="leading" constant="66" id="apx-mM-fh8"/>
+                        <constraint firstAttribute="trailing" secondItem="1Lg-Zh-Uen" secondAttribute="trailing" constant="66" id="bUl-hC-ehW"/>
+                        <constraint firstItem="KNH-cB-ODU" firstAttribute="leading" secondItem="0Nu-a8-IIr" secondAttribute="leading" constant="40" id="kSJ-EV-IQo"/>
+                        <constraint firstItem="5Wa-6a-uKV" firstAttribute="top" secondItem="Rst-wk-NA8" secondAttribute="bottom" constant="24" id="pRh-Q8-Gdw"/>
+                        <constraint firstAttribute="trailing" secondItem="5Wa-6a-uKV" secondAttribute="trailing" constant="16" id="yag-3I-log"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="mt4-n9-XFZ"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="0Nu-a8-IIr" firstAttribute="top" secondItem="sm6-i7-yYI" secondAttribute="top" constant="85" id="2F0-IC-p0M"/>
+                <constraint firstAttribute="bottom" secondItem="0Nu-a8-IIr" secondAttribute="bottom" id="OsD-ul-HjB"/>
+                <constraint firstAttribute="trailing" secondItem="0Nu-a8-IIr" secondAttribute="trailing" constant="16" id="dtn-57-HXT"/>
+                <constraint firstItem="0Nu-a8-IIr" firstAttribute="leading" secondItem="sm6-i7-yYI" secondAttribute="leading" constant="16" id="jnA-8M-npH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-441.304347826087" y="8.7053571428571423"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="images_completing_daily_20tasks" width="232" height="172"/>
+    </resources>
+</document>

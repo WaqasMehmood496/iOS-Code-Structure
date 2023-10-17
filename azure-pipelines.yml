@@ -1,0 +1,67 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+  - develop
+
+pr: none
+
+pool:
+  vmImage: 'macos-12'
+
+steps:
+  - checkout: self
+    submodules: true
+    
+  - task: InstallAppleCertificate@2
+    inputs:
+      certSecureFile: 'distribution_myday-2.p12'
+      certPwd: '$(P12PASSWORD_nov)'
+      keychain: 'temp'
+
+  - task: InstallAppleProvisioningProfile@1
+    inputs:
+      provisioningProfileLocation: 'secureFiles'
+      provProfileSecureFile: 'ad_hoc_myday-4.mobileprovision'
+
+  - task: CocoaPods@0
+    displayName: 'Install dependencies'
+
+  - task: Xcode@5
+    inputs:
+      actions: 'build'
+      xcodeVersion: specifyPath
+      xcodeDeveloperDir: /Applications/Xcode_13.4.app
+      configuration: 'Release'
+      sdk: 'iphoneos'
+      xcWorkspacePath: 'Evexia.xcworkspace'
+      scheme: 'Evexia Production'
+      signingOption: 'manual'
+      packageApp: true
+      signingIdentity: '$(APPLE_CERTIFICATE_SIGNING_IDENTITY)' # system constants
+      provisioningProfileUuid: '$(APPLE_PROV_PROFILE_UUID)' # system constants
+      exportArgs: '--dsym=true'
+      useXcpretty: true
+  - task: CopyFiles@2
+    inputs:
+      Contents: |
+        **/*.ipa
+        **/*.dSYM/**
+      TargetFolder: '$(build.artifactStagingDirectory)'
+  - task: PublishBuildArtifacts@1
+    inputs:
+      pathToPublish: '$(build.artifactStagingDirectory)'
+      artifactName: 'ipa-files'
+      artifactType: 'container'
+  - task: AppCenterDistribute@3
+    inputs:
+      serverEndpoint: 'Evexia'
+      appSlug: '$(APP_SLUG)' # AppCenter slug (usually “yourCompanyName/AppName”)
+      appFile: '$(Build.ArtifactStagingDirectory)/**/*.ipa'
+      symbolsDsymFiles: '$(Build.ArtifactStagingDirectory)/**/dSYMs'
+      releaseNotesOption: 'file'
+      releaseNotesFile: 'CHANGELOG'
+      destinationType: 'groups'
+      distributionGroupId: '$(DISTRIBUTION_GROUP_ID)' # group id from AppCenter

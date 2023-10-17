@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "pdPlaceholder.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
